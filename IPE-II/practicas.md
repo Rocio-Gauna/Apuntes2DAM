@@ -12,3 +12,4 @@ Una persona que realiza una actividad economica de forma habitual, personal y di
 - caracteristica no tiene jefe, ni un nomina fija; emites factura a tus clientes por los servicios realizados o productos. Ingresos variables. las ganancias dependen de los clientes. 
 
 explicar las consecuencia que tiene para la sociedad el formato del trabajo por cuenta propia y la creacion de empresas. 
+...
