@@ -1,0 +1,3 @@
+1;Granada CF;Granada
+2;Málaga CF;Málaga
+3;Cádiz CF;Cádiz
