@@ -1,0 +1,28 @@
+incidencia que no se conoce la incidencia en la app de la empresa.
+
+
+1-Que informacion necesitarias antes de actuar ?
+- ver el origen del problema. 
+2-A quien informarias primero y por que?
+- informariamos primero a los compañeros de trabajos ya que estamos en la misma linea. 
+3-Redactad un mensaje profesional de 5-7 lineas.
+
+Estimado Usuario, queremos informar que debido a la actualizacion de nuestra app, hemos detectado fallas al iniciar sesió, les pedimos las disculpas correspondiente por lo sucedido.
+Estamos intentando solucionar el inconveniente en el menor tiempo posible para que disfrute nuevamente de nuestra app. 
+les agradecemos de vuestra paciencia. 
+
+Saludos la empresa 
+
+
+Buenos dias Compañeros
+
+
+
+4-Proponed 3 pasos inmediatos para investigar la incidencia.
+
+- 
+-
+-
+
+5-Escribid una frase que No utilizartias con el cliente y explicad por que!
+-
