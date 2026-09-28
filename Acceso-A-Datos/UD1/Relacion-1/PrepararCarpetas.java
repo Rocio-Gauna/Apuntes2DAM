@@ -4,40 +4,35 @@ import java.nio.file.Path;
 
 public class PrepararCarpetas {
     public static void main(String[] args) {
-        // Definir las rutas a preparar
+//Primero declaramos la ruta en memoria.
 
-        Path carpeta = Path.of("datos");
-        Path copia = carpeta.resolve("copias");
-        Path archivoClubes = carpeta.resolve("clubes.txt");
-        Path archivosCopias = copia.resolve("respaldo.txt");
+Path carpeta  = Path.of("datos");
+Path archivoClub = carpeta.resolve("clubes.txt");
+Path copia = carpeta.resolve("copia");
+Path archivoCopia = copia.resolve("respaldo.txt");
 
-        try {
-            //crea datos y datos/copia 
-            Files.createDirectories(copia);
+try {
+    
+    Files.createDirectories(copia);
 
-            // creamos el archivo o fichero de clubes con la condicion de si no existe creamelo y si existiera ccreamos de nuevo 
+    if(Files.notExists(archivoClub)){
+        Files.createFile(archivoClub);
+    }
 
-            if (Files.notExists(archivoClubes)){
-                Files.createFile(archivoClubes);
-            }
+    if (Files.notExists(archivoCopia)) {
+        Files.createFile(archivoCopia);
+    }
 
-            if(Files.notExists(archivosCopias)){
-                Files.createFile(archivosCopias);
-            }
+    System.out.println("¿Existe?"+ Files.exists(archivoClub));
+    System.out.println("Tamaño"+ Files.size(archivoClub) + " bytes");
 
-            // mostramos el estado del fichero
+    System.out.println("¿Existe?"+ Files.exists(archivoCopia));
+    System.out.println( "Tamaño"+ Files.size(archivoCopia) + " bytes");
+    
 
-            System.out.println("clubes.txt existe: " + Files.exists(archivoClubes)
-                    + " | tamaño: " + Files.size(archivoClubes) + " bytes");
-
-            System.out.println("respaldo.txt existe: " + Files.exists(archivosCopias)
-                    + " | tamaño: " + Files.size(archivosCopias) + " bytes");
-        } catch (IOException e) {
-
-            // si algo falla mostramos 
-            System.err.println("Error al preparar las carpetas: " + e.getMessage());
-        }
-
-        }
+} catch (IOException e) {
+    System.err.println("Error al ejercutarlo" + e.getMessage());
+}
 
     }
+}
