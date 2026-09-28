@@ -1,0 +1,48 @@
+Entrenador financiero Personal:
+- Rastreas los gastos automáticamente.
+- predice las facturas y el flujo de efectivo
+- Sugiere formas de ahorrar dinero.
+
+Planificación de compras:
+- Crear planes de comidas semanales
+- Genera listas de compras 
+- Sugiere recetas basadas en lo que ya hay en el refrigerador
+
+
+As de Mantenistenteimiento del hogar (oscar)
+- Recuerda a los propietarios sobre el mantenimiento 
+- Diagnostica problemas a partir de fotos
+- Encuentra profesionales de reparación cercanos
+- 
+
+
+Aplicación de Salud y Cuidado de Mascotas:
+-Recordatorios de vacunación
+-Al verificador de síntomas
+-Planificador de dietas
+-Gestión de citas veterinarias
+Aplicación Familiar para el Cuidado de Personas Mayores
+-Recordatorios de medicamentos
+-Alertas de emergencia
+-Panel de control familiar compartido
+-Integración de telesalud
+
+
+trabajar en base a el Reto : 
+vamos a liderar un prpyecto tecnico o de innovacion dentro de un sector economico real, aplicado de forma integrada los conocimiento del ciclo
+
+-¿Sobre que necesidades o problemas aun no resueltos vamos en el sector elegido vamos a trabajar?
+ Abarca los problemas comunes de tener una mascota, tal como tener todo al alcance de tu mano, buscamos solucionar en un solo lugar.   
+tener la ficha de las vacunaciones actualizadas.
+
+
+-¿En que sector economico vamos a centrar el proyecto y por que lo consideramos estrategico? 
+
+-¿Quienes son los destinatarios o beneficiarios del proyecto?
+
+Estan destinados a las personas con mascotas, tiendas de mascotas, y veterinarios.
+Los beneficios asociados al respecto es el control diario y la organizacion a la mascota, tal asi como complementar los habitos diario de los dueños con sus mascotas. 
+
+-¿Que tipo de solucion (producto, servicio o propuesta ) podemos explorar para dar respuesta a la necesidad detectada?
+
+- Que valor diferencial y que impacto buscamos generar en el entorno?
