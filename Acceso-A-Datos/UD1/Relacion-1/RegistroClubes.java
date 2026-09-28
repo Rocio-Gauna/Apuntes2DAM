@@ -30,7 +30,7 @@ public class RegistroClubes {
 
         System.out.println("ingrese nombre de la ciudad");
         String ciudad = scanner.next();
-        try (BufferedWriter salida = Files.newBufferedWriter(archivoClubes, StandardCharsets.UTF_8,){
+        try (BufferedWriter salida = Files.newBufferedWriter(archivoClubes, StandardCharsets.UTF_8, StandardOpenOption )){
             
         }
 
