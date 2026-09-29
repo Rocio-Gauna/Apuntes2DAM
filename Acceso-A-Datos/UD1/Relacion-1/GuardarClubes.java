@@ -13,7 +13,7 @@ public class GuardarClubes {
             Files.createDirectories(carpeta);
 
             try (BufferedWriter escritor =
-                         Files.newBufferedWriter(archivo, StandardCharsets.UTF_8)) {
+                        Files.newBufferedWriter(archivo, StandardCharsets.UTF_8)) {
 
                 escritor.write("1;Granada CF;Granada");
                 escritor.newLine();
