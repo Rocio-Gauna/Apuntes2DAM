@@ -26,3 +26,30 @@ Buenos dias Compañeros
 
 5-Escribid una frase que No utilizartias con el cliente y explicad por que!
 -
+
+
+EL Stack de la Comunicacion profesionalmas:
+Protocolos para explicar, escuchar, informar y resolver
+
+
+Error Criticos: Despliegue fallido:
+
+La incidencia : el producto acaba de publicarse. Algunos usuario no puede iniciar sesion. El cliente tenia una demostracion hoy.
+
+El verdadero Reto:
+Primero resolvemos el bug. Despues, gestionamos el panico y ponemos nombre a lo que hemos hecho.
+
+¿que ha ocurrido?
+¿A quien informamos?
+a nuestro esquipo de trabajo 
+¿Que informacion necesitamos?
+el error, que tienen en comun el error. comunicacion al cliente
+¿Que decimos al cliente?
+
+**Definiendo el estandar**
+es
+clara, concreta, respetuosa, orienta a la actualizacion
+
+no es.
+hablar con jerga dificil,esconder le problema 
+
