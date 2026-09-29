@@ -6,33 +6,45 @@ import java.nio.file.StandardOpenOption;
 import java.util.Scanner;
 
 public class RegistroClubes {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-    
+
+        // Rutas: carpeta contenedora y archivo concreto dentro de ella
         Path carpeta = Path.of("datos");
         Path archivoClubes = carpeta.resolve("clubes.txt");
 
-        if (Files.notExists(carpeta)){
+        // Pedimos los datos ANTES de tocar el archivo, ya que no dependen de él
+        System.out.println("Ingrese el ID del club:");
+        String id = scanner.nextLine();
+
+        System.out.println("Ingrese el nombre:");
+        String nombre = scanner.nextLine();
+
+        System.out.println("Ingrese la ciudad:");
+        String ciudad = scanner.nextLine();
+
+        // Construimos la línea con el formato pedido: id;nombre;ciudad
+        String linea = id + ";" + nombre + ";" + ciudad;
+
+        try {
+            // createDirectories ya crea "datos" si no existe, sin fallar si ya existía
             Files.createDirectories(carpeta);
-        }
-        if (Files.notExists(archivoClubes)) {
-            Files.createFile(archivoClubes);
-        }
 
-        System.out.println("Ingrese el número de clubes a registrar:");
-        String id =scanner.next();
+            // Escribimos en archivoClubes (el ARCHIVO), no en carpeta (la CARPETA)
+            // CREATE: crea el archivo si no existe. APPEND: añade al final si ya existe.
+            Files.writeString(archivoClubes, linea + System.lineSeparator(),
+                    StandardCharsets.UTF_8,
+                    StandardOpenOption.CREATE,
+                    StandardOpenOption.APPEND);
 
-        System.out.println("Ingrese nombre");
-        String nombre = scanner.next();
+            System.out.println("Club guardado correctamente.");
 
-        System.out.println("ingrese nombre de la ciudad");
-        String ciudad = scanner.next();
-        try (BufferedWriter salida = Files.newBufferedWriter(archivoClubes, StandardCharsets.UTF_8, StandardOpenOption )){
-            
+        } catch (IOException e) {
+            System.err.println("Error al guardar el club: " + e.getMessage());
         }
 
-
+        // Cerramos el Scanner al final, ya que no se vuelve a leer teclado después
+        scanner.close();
     }
-
 }
