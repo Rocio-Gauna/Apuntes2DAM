@@ -81,3 +81,86 @@ Ejecutar ordenes recibidas
 
 1.1 ¿
 ![alt text](image-2.png)
+
+Empleo publico
+una oposicion es un examen...*
+concurso oposicion...* Burcar exactamente 
+![alt text](image-3.png)
+
+Que opciones profesiones existen?
+
+Para acceder a un puesto en la administracion publica es necesario superar un proceso de seleccion que se realiza mediante oposicoin, concurso o consurso-oposicion. 
+
+Si el acceso es el consurso, unicamente se califica por puntos de los meritos de los aspirantes. S i se exige una oposicion, tendras que realizar una mas pruebas o examenes para ganar una de las plazas disponibles. Finalmente, si la modalidad es el concurso oposicion, consistira en realizar ambos sistemas anteriores.
+
+Los empleos en la administracion se ofertan a traves de una convocatoria publica. 
+Pueden existir la siguiente modalidades: funcionariado de carrera; funcionariado interino; personal laboral. 
+
+Ventajas: trabajo estable, Posibilidad de promocion y formacion, remuneracion segura, horario fijo
+
+Incovenientes: Gran esfuerzo para el acceso.
+Requiere constancia e inversion de tiempo y dineropara lograrlo, 
+Menor posibilidad de autonomia e iniciativa.
+sin iniciativa propia
+![alt text](image-4.png)
+
+boe (boletin oficial del estado) y boa(boletin oficial de andalucia )
+
+¿Trabajar en Europa?
+
+![alt text](image-5.png)
+
+A. Red EURES 
+European Employment Service (EURES) es una red de cooperación para el empleo y para la libre circulación de personas trabajadoras en la Union Europea. Está dirigida tanto a personas interesadas en trasladarse a otro país de Europa para estudiar como a empresas que deseen contratar personal de otro países.
+
+B. Europass
+Es un conjunto gratuito de herra-mientas online que permite ges-tionar las competencias y planificar el aprendizaje y la carrera pro-fesional en Europa. 
+
+¿trabajar en Europa?
+![alt text](image-6.png)
+Principales opciones de Europass:
+Perfil Europass: Ayuda a describir tus capacidades, encontrar puestos de trabajo y oportunidades de aprendizaje que te pueden interesar, gestion tus candidaturas y elaborar curriculos y cartas de presentacion.
+CV Europass y editor de curriculu vitae:
+El CV Europass presenta las capacidades y cualificaciones personales de modo que pueden ser comprendidas en todo los paises de la Union Europea. El editor de curriculum vitae sirve para crear uno y actualizarlo. Facilita diferentes plantillas para crear y conserva el documento confeccionado en un dipositivo.
+Edito de cartas de presentacion :
+Suplemento al titulo o certificado profesional
+Documento de movilidad Europass:
+
+
+Ploteus 
+Es un portal sobre oportunidades de formacion en todo el espacio europeo. Es una herramienta util. 
+![alt text](image-7.png)
+
+Mi empleabilidad
+Para buscar empleo debemos partir del convencimiento de que nuestra formacion es la adecuada y tener confianza en nuestras capacidades.
+
+Es importante que tengamos clara una hoja de ruta en la que marquemos unos objetivos adecuados a nuestras posibilidades, teniendo en cuenta la demanda del mercado de trabajo.
+
+Algunas de las Pautas que se recomienda seguir son:
+
+1.Planificar una busquedas de empleo sobre un calendario y horario.
+2.Elaborar una lista de tareas para llevar a cabo.
+3.Revisar o relizar un curriculum vitae y una carta de presentacion.
+4.Informarse sobre las empresas.
+5.Preparar la entrevista de trabajo.
+6.Revisión de la entrevista. 
+![alt text](image-8.png)
+Ala hora de buscar trabajo, la organizacion es fundamental. Es aconsejable
+
+¿Como puedo informarme sobre la demanda del mercado laboral ?
+La mayor parte de la oferta laborales se concentran en portales de empleo.
+Un portal de empleo es un espacio web que integran la oferta y la demanda de trabajo existe en el mercado.
+
+Algunos portales de empleo privado son:
+- infojobs.net
+- infoempleo.com
+- monster.es
+Algunos portales de empleo publico son:
+- empleopublico.net
+- sistemanacionalempleo.es
+- opositor.com
+
+Networking: crear una red de contactos con personas que pueden ayudarte en tu busqueda de empleo.
+Estas conexion podras encontrarlas en tu entorno mas cercano(amistades, compañeras.familiares.etc.) o mediante las redes sociales o las redes profesionels. 
+![alt text](image-9.png)
+
