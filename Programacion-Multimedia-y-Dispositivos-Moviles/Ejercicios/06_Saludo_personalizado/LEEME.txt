@@ -1,0 +1,19 @@
+PMDM - UD1 - EJERCICIO 06: Saludo personalizado
+
+ARCHIVOS: MainActivity.kt y activity_main.xml
+
+IMPORTANTE: Esta carpeta contiene LOS ARCHIVOS DE UNA ACTIVIDAD, no un proyecto Gradle completo.
+Para que funcionen, crea un proyecto en Android Studio de tipo EMPTY VIEWS ACTIVITY,
+con lenguaje Kotlin y package/namespace EXACTO: com.example.pmdmud1.e06
+(Si usas otro package, cambia la primera línea de MainActivity.kt para que coincida).
+Copia MainActivity.kt en app/src/main/java/com/example/pmdmud1/e06/
+y activity_main.xml en app/src/main/res/layout/ (reemplaza los archivos existentes).
+Conserva los archivos Gradle, Manifest y tema que genera Android Studio.
+
+Si tu proyecto muestra @Composable o setContent { ... }, has elegido una plantilla
+Jetpack Compose, que NO es la adecuada para estas prácticas de interfaz XML.
+Usa la plantilla Empty Views Activity y conserva AppCompatActivity; la plantilla
+normal incluye la dependencia androidx.appcompat. Si Android Studio la omite,
+añade androidx.appcompat:appcompat a las dependencias del módulo.
+
+MATERIAL DEL ALUMNADO: código inicial con tareas TODO. No está resuelto.

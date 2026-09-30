@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Tarjeta de presentación"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvTarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pulsa para crear tu tarjeta"
+            android:textSize="18sp"
+            android:paddingTop="12dp"
+            />
+        <Button
+            android:id="@+id/btnPresentar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Presentarme"
+            />
+    </LinearLayout>
+</ScrollView>

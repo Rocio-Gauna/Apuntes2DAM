@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Reto final: presupuesto semanal"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etIngresos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresos de la semana"
+            android:inputType="numberDecimal|numberSigned"
+            />
+        <EditText
+            android:id="@+id/etComida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gasto en comida"
+            android:inputType="numberDecimal|numberSigned"
+            />
+        <EditText
+            android:id="@+id/etTransporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gasto en transporte"
+            android:inputType="numberDecimal|numberSigned"
+            />
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular saldo"
+            />
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Introduce tus cantidades"
+            android:textSize="18sp"
+            android:paddingTop="12dp"
+            />
+        <!-- Añade aquí btnLimpiar (id exacto), tal como pide el enunciado. -->
+    </LinearLayout>
+</ScrollView>
