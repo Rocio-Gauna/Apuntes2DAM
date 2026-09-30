@@ -1,0 +1,8 @@
+id;nombre;ciudad
+1;Granada CF;Granada
+X;Málaga CF;Málaga
+2;;Málaga
+3;Cádiz CF;Cádiz
+3;Club duplicado;Sevilla
+4;Club con ciudad ausente
+5;Club Atlético Motril;Motril

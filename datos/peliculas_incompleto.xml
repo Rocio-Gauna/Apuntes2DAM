@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<peliculas>
+  <pelicula id="1"><titulo>El laberinto del fauno</titulo><director>Guillermo del Toro</director></pelicula>
+  <pelicula id="2"><titulo>La llegada</titulo></pelicula>
+  <pelicula id="2"><titulo>Duplicada</titulo><director>Otro director</director></pelicula>
+</peliculas>

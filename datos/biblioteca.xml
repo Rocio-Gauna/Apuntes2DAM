@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+  <libro id="1"><titulo>El camino</titulo><autor>Miguel Delibes</autor></libro>
+  <libro id="2"><titulo>Nada</titulo><autor>Carmen Laforet</autor></libro>
+  <libro id="3"><titulo>La sombra del viento</titulo><autor>Carlos Ruiz Zafón</autor></libro>
+  <libro id="4"><titulo>El tiempo entre costuras</titulo><autor>María Dueñas</autor></libro>
+</biblioteca>

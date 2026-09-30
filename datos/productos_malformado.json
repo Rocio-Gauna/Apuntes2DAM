@@ -1,0 +1,5 @@
+[
+  {"id":10,"nombre":"Teclado mecánico","stock":12},
+  {"id":20,"nombre":"Ratón inalámbrico","stock":7},
+  {"id":30,"nombre":"Monitor 24 pulgadas","stock":4}
+]

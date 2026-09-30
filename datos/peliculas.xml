@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<peliculas>
+  <pelicula id="1"><titulo>El laberinto del fauno</titulo><director>Guillermo del Toro</director></pelicula>
+  <pelicula id="2"><titulo>La llegada</titulo><director>Denis Villeneuve</director></pelicula>
+  <pelicula id="3"><titulo>Parásitos</titulo><director>Bong Joon-ho</director></pelicula>
+</peliculas>

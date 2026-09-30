@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clubes>
+    <club id="1"><nombre>Granada CF</nombre><ciudad>Granada</ciudad></club>
+    <club id="2"><nombre>Málaga CF</nombre><ciudad>Málaga</ciudad></club>
+    <club id="3"><nombre>Cádiz CF</nombre><ciudad>Cádiz</ciudad></club>
+    <club id="4"><nombre>Almería UD</nombre><ciudad>Almería</ciudad></club>
+    <club id="5"><nombre>Club Atlético Motril</nombre><ciudad>Motril</ciudad></club>
+</clubes>
