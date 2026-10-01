@@ -24,8 +24,10 @@ class MainActivity : AppCompatActivity() {
             val textoCantidad = cantidad.text.toString()
             val precioNumero  = textoPrecio.toDoubleOrNull()
             val cantidadNumero = textoCantidad.toIntOrNull()
-            if (prcioNumero == null || cantidadNumero == null){
+            if (precioNumero == null || cantidadNumero == null){
                 resultado.text = "Precio negativo o cantidad no valida"
+            }else if(precioValor < 0.0 || cantidadValor<=0){
+                resultado.text = "El Precio no puede ser negativo y l acantidad no puede ner negativa"
             }else{
                 val total = precioNumero * cantidadNumero 
                 resultado.text = "Total: $precioNumero x $ cantidadNumero = $total"
