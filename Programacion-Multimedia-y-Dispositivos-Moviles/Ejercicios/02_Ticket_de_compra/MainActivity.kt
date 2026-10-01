@@ -20,6 +20,16 @@ class MainActivity : AppCompatActivity() {
             // TODO 1: lee los dos EditText como texto.
             // TODO 2: conviértelos de forma segura y valida sus valores.
             // TODO 3: calcula y muestra el importe.
+            val textoPrecio = Precio.text.toString()
+            val textoCantidad = cantidad.text.toString()
+            val precioNumero  = textoPrecio.toDoubleOrNull()
+            val cantidadNumero = textoCantidad.toIntOrNull()
+            if (prcioNumero == null || cantidadNumero == null){
+                resultado.text = "Precio negativo o cantidad no valida"
+            }else{
+                val total = precioNumero * cantidadNumero 
+                resultado.text = "Total: $precioNumero x $ cantidadNumero = $total"
+            }
         }
     }
 }

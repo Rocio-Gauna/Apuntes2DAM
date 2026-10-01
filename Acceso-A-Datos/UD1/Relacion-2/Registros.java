@@ -18,7 +18,7 @@ public class Registros {
             List<String> registro = Files.readAllLines(ruta, StandardCharsets.UTF_8);
             List<String> nuevoRegistro = new ArrayList<>();
             boolean encontrado = false;
-            for(String linea : registro){
+            for(String linea : registro){ 
                 String[] campos = linea.split(";", -1);
                 
 
