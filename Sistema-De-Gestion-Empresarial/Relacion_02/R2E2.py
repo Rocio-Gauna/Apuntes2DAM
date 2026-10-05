@@ -13,4 +13,4 @@ cantidad = int(input("Cantidad: " ))
 
 subtotal = cantidad * precio_unitario
 
-print(f"{precio_unitario:.2f}EUR X {cantidad}, Subtotal : { subtotal:.2f}EUR")
+print(f"Precio Unitario: {precio_unitario:.2f}EUR X {cantidad}, Subtotal : { subtotal:.2f}EUR")
