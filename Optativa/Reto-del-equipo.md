@@ -69,3 +69,28 @@ hablar con jerga dificil,esconder le problema
 ![alt text](image-13.png)
 ![alt text](image-14.png)
 ![alt text](image-15.png)
+![alt text](image-16.png)
+
+Proyecto final de la unidad.
+Gestionar una incidencia de produccion desde que aparece el problema de la comunicacion con las personas implicadas
+
+Entregables:
+-Ficha de analisis de la incidencia.
+-Mensaje interno el equipo
+-Comunicacion para el responsable del proyecto.
+-Mensaje para el cliente
+-Simulacion de una reunion de seguimiento
+-Reflexion final sobre los errores de comunicacion detectados. 
+
+Ficha de analisis de incidencia:
+- fecha y hora de la incidencia
+- Persona que detecta el problema
+- descripcion
+- impacto
+- prioridad
+- Usuarios afectados
+- Pòsibles causas
+- Responsables de sooluconarlo 
+- Estado
+- Solucion aplicada.
+
