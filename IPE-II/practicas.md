@@ -164,3 +164,63 @@ Networking: crear una red de contactos con personas que pueden ayudarte en tu bu
 Estas conexion podras encontrarlas en tu entorno mas cercano(amistades, compañeras.familiares.etc.) o mediante las redes sociales o las redes profesionels. 
 ![alt text](image-9.png)
 
+A que nos referimos con marcado laboral?
+
+¿Trabajar en europa?
+
+perfil europass: Ayuda a describir tus capacidades, encontrar puestos de trabajo y oportunidades de aprendizaje que te pueden interesar, gestionar tus candidaturas y elaborar curriculos y cartas de presentacion
+
+CV Europass y editor de curriculum vitae: El Cv Europass, presenta las capacidades y calificaciones personales de modo que puede ser comprendida en todos los paises de la union europea. El editor de curriculum vitae sirve para crear uno u actualizarlo. Facilita difirentes plantillas y conservar el documetno confeccionado en un dispositivo. 
+
+SUPLEMENTO AL TITULO O CERTIFICADO PROFESIONAL
+dOCUMENTO MOVILIDAD.
+
+Para buscar empleo debemos partir del convencimiento de que nuestras formacion es la decuada y tener confianza en nuestras capacidades. 
+
+importante una hoja de ruta. en que marquemos adecuadamente nuestras posibilidades teniendo en cuenta la demanda del mercado 
+recomendaciones:
+
+Planifificar la busqueda de empleo sobre un calendario y un horario
+Elaborar una lista de tareas para llevar a cabo
+revisar o realizar CV y carta de presentacion
+informarse sobre empresas
+preparar la entrevista de trabajo
+Revision de la entrevista.
+
+la mayor parte de las ofertas laborales se concentran en portales de empleo. 
+
+un portal de empleo es un espacio web que integran la oferta y la demanda de trabajo existente ene l mercado
+
+Privados:
+infojob
+monster
+infoempleo
+
+publicos:
+empreopublico.net
+sistemanacionalempleo.es
+opositor.com
+
+perfil profesional, nuestras caracteristicas tiene que estara lineadas con la demanda de empresas para poder cubrir los puestos de trabajos ofertados
+
+Un perfil Profesional es una descripcion de las caracteristicas tecnicas, personales y sociales, asi como de la expèriencia de una persona, para poder afrontar las tareas y responsabilidadesd e un puesto de trabajo
+
+
+un profesiograma 
+es una herramienta que realizan los despartamentos de recursos humanos de las empresas para facilitar el proceso de seleccion de aspirantes.
+su objetivo es si la persona candidata se ajusta al puesto concreto. 
+la reputacion en linea o digital es el prestigio de una persona o una compañia en internet. 
+La publicaciones y las interacciones con otras personas afectana la reputacion. 
+
+Eleccion profesion
+elemento que condicionan nuestra eleccion profesional son situacion perfonal; formacion; experiencia profesional previa en el mismo sector o en otros; aficciones; vicnulacion a asociaciones;
+caracteristicas familiares; entorno social; condiciones economicas; entorno social; condiciones economicas
+
+para la totams de decisiones es muy util realizar un analisis DAFO ( debilidades, amenazas, fortaleza y oportunidades)
+
+debilidades:
+dificultad para explicar conceptos tecnicos
+
+fortaleza conocimientos y capacidad de aprendizaje 
+amenazas demandas de cambios en lenguajes de lenguajes de programacion
+oportunidades: posibilidad de trabajar en remoto. 
