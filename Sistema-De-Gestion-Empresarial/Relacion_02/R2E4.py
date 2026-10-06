@@ -1,7 +1,7 @@
 #pide producto Inicial, unidades recibidas, y unidades vendidas
 #calcula el stock
 #mostrar el resumen de movimientos 
-
+nombre_producto = input("Nombre del producto: ")
 producto_inicial = int(input("Producto inicial: "))
 unidades_recibitas = int(input("Unidades recibidas: "))
 unidades_vendidas = int(input("Unidades vendidas: "))

@@ -6,7 +6,7 @@ ciudad = "Granada"
 empleados = 7
 activa = True
 
-print(f"  === Empresa ===")
+print(f"  === {empresa} ===")
 
 print(f"Empresa: {empresa}")
 print(f"Ciudad: {ciudad}")

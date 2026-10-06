@@ -9,5 +9,4 @@ descuento = subtotal * porcentaje
 
 total = subtotal - descuento
 
-print (f"Descuento: {descuento:.2f}EUR")
-print (f"total: {total:.2f}EUR")
+print (f"Descuento: {descuento:.2f}EUR. , total: {total:.2f}EUR")

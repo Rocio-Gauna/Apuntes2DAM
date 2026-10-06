@@ -8,7 +8,4 @@ subtotal = precio * cantidad
 descuento = subtotal * porcentaje_ingresado
 total =  subtotal - descuento
 
-print(f"Subtotal : {subtotal:.2f}EUR")
-print(f"cantidad: {cantidad}")
-print(f"Descuento: {descuento} %")
-print(f"Total es de : {total} EUR")
+print(f"Con precio: {subtotal:.2f},cantidad: {cantidad} y descuento {descuento}, el total es {total:.2f} EUR")

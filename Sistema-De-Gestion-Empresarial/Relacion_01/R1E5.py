@@ -14,8 +14,4 @@ gasto_total = materiales + otros
 resto = ingreso_Empresa - gasto_total
 
 print(f"==== Informe de la Empresa ====")
-print(f"Ingresos de la empresa: {ingreso_Empresa:.2f}EUR")
-print(f"Gastos en materiales : {materiales:.2f}EUR")
-print(f"Otros Gastos:{otros:.2f}EUR")
-print(f"Gastos total de la Empresa: {gasto_total:.2f}EUR")
-print(f"Resultado restante : {resto:.2f}EUR")
+print(f"Gastos : {gasto_total:.2f}EUR. ,Resultado  : {resto:.2f}EUR ")
