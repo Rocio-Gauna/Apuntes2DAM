@@ -5,7 +5,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Registros {
+public class Ejercicio1 {
     public static void main(String[] args) {
 
         Path ruta = Path.of("datos", "videojuegos.csv");

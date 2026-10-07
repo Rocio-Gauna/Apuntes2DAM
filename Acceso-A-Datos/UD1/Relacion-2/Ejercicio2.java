@@ -6,7 +6,7 @@ import java.nio.file.Path;
 import java.util.List;
 import java.util.Scanner;
 
-public class Alumnos {
+public class Ejercicio2 {
 
     public static void main(String[] args) {
         // declaramos la ruta del fichero que vamos a consultar
