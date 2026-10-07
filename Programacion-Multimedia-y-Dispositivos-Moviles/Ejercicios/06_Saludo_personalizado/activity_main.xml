@@ -20,8 +20,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Tu nombre"
-            android:inputType="textCapWords"
-            />
-        <!-- Completa los controles indicados en el enunciado. -->
+            android:inputType="textCapWords"/>
+
+        <EditText
+            android:id="@+id/etCiudad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tu ciudad"
+            android:inputType="textCapWords" />
+
+        <Button
+            android:id="@+id/btnSaludar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saludar" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aquí aparecerá el saludo"
+            android:textSize="18sp"
+            android:paddingTop="12dp" />
+
     </LinearLayout>
 </ScrollView>
