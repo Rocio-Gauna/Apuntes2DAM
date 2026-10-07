@@ -224,3 +224,70 @@ dificultad para explicar conceptos tecnicos
 fortaleza conocimientos y capacidad de aprendizaje 
 amenazas demandas de cambios en lenguajes de lenguajes de programacion
 oportunidades: posibilidad de trabajar en remoto. 
+
+CV. 
+herramientas, es documento que recoge de forma ordenada los datos personales, la formacion academica, y experiencia profesional de la persona candidata a un puesto detrabajo
+
+Se debe poner especial atencion en la preparacion del curriculum. Sobre todo, debe ser claro, atractivo y ordenado.
+
+debera utilizarse papel en blanco con dos paginas como maximo. Es preferible incluir una foto. 
+
+- Datos Personales: Nombre y apellido, lugar, fecha de nacimiento, direccion , telefono, correo electronico.
+
+- Idiomas: Nivel alcanzado con forme al marco comun europeo de referncias para las lenguas. No se debe incluir la lengua materna.
+- Otros datos de interes.Solo se debe incluir datos relevantes para el puesto de trabajo. 
+
+- Redacciones: Se utilizara un lenguaje adecuado y fin faltas de ortografia con la informacion imprensindible par el puesto. 
+
+- Formacion academica: Titulos oficiales, mas importantes y centros donde se han obtenidos con las fechas obtenidas con fecha de inicio y finalizacion admiten las calificaciones en el caso de ser excelentes
+
+- Formacion complementaria : Cursos profesionales y de la especializaciony centros donde de se han obtenido con las fechas de inicio y finalizacion no se tiene mucha formacion complementaria, se puede añadir esta formacion al epigrafe anterior
+
+- Experiencia profesional
+Puestos de trabajo y empresas donde se trabajo y empresas donde se trabajo con las fechas o indicando la duracion. las practicas deben incluirse tambien. 
+
+
+**hay 3 formatos clasicos**
+
+CRONOLOGICO INVERSO: 
+
+FUNCIONAL:
+
+
+MIXTO:
+
+
+Carta de presentacion:
+
+Es un escrito que acompaña al curriculum. y en el que un persona destaca sus cualidades y señala su disposicion a trabajar en una empresa.
+
+Tiene como finalidad captar la atencion del receptor al destacar los aspectos mas relevantes del perfil profecional de quien la envia. Siempre debe acompañar al curriculum vitae.
+el documento es como nuestra tarjeta de visita y por lo tanto, debera estar impecable redactado.
+
+Siempre va dirigida a una empresa concreta, busca un perfil especifico. Por ellos nunca se debe hacer una carta de presentacion estandar para todas las empresas ni para todas las ofertas de trabajo 
+Ademas, disponer de una buena identidad digital, definir de forma acertada de la marca personal, y desarrollar las competencia digitales que las empresas demandan aumentara la empleabilidad. 
+
+
+Como deciden las empresas a quien contratan
+cuadno la empresa necesita contratar a alguien para un puesto de trabajao inica un proceso de seleccion de personalp
+para elegir a la persona ideal se utiliza difirentes instrumentos: pruebas, entrevistas, referencias, ect. El proceso de seleccion consta de las siguientes 
+fases:
+analisis del puesto;
+reclumento y preseleccion;
+reclutamiento
+reclutamiento externo; seleccion
+
+la entrevistaq de trabajo 
+normalmente suele ser la desiciva de un proceso de seleccin, es decir, es el momento en el que la persona entrevistadora toma una decision respecto a la contratacion de la persona candidata.
+en la actualidad tambien se realizan entrevista de trabajo en grupo
+
+elaborar una hoja de ruta. 
+elige un puesto de trabajo relacionado con tus estudios con los metodos de busqueda de empleo de la unidad
+Elabora una ficha de descripcion del puesto; puedes ayudarte de ofertas similares en la red.
+describe el perfil profesional mas adecuado para el puesto con un programa, 
+
+planificacion proyecto personal y autoconoimiento 
+plan de acccion para buscar empleo
+cv carta de presentacion
+pruebas psicotecnicas y entrevistas
+fase final
