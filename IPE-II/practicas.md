@@ -281,6 +281,12 @@ la entrevistaq de trabajo
 normalmente suele ser la desiciva de un proceso de seleccin, es decir, es el momento en el que la persona entrevistadora toma una decision respecto a la contratacion de la persona candidata.
 en la actualidad tambien se realizan entrevista de trabajo en grupo
 
+
+ # Reto Profesional
+
+ 
+
+
 elaborar una hoja de ruta. 
 elige un puesto de trabajo relacionado con tus estudios con los metodos de busqueda de empleo de la unidad
 Elabora una ficha de descripcion del puesto; puedes ayudarte de ofertas similares en la red.
