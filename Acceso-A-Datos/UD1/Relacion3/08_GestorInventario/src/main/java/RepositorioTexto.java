@@ -1,4 +1,5 @@
 import java.nio.file.Path;
+import java.util.List;
 
 public class RepositorioTexto implements RepositorioProductos {
 
@@ -8,6 +9,13 @@ public class RepositorioTexto implements RepositorioProductos {
         this.archivo = archivo;
     }
 
-    // TODO: guardarTodos(...)
-    // TODO: cargarTodos(...)
+    @Override
+    public void guardarTodos(List<Producto> productos) {
+        throw new UnsupportedOperationException("Pendiente de implementar");
+    }
+
+    @Override
+    public List<Producto> cargarTodos() {
+        throw new UnsupportedOperationException("Pendiente de implementar");
+    }
 }

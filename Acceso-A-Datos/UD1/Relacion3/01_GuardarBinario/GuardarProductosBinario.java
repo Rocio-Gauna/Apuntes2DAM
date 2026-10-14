@@ -26,9 +26,15 @@ public class GuardarProductosBinario {
                 Files.createFile(archivo);
             }
             // TODO 3: guardar la lista completa con ObjectOutputStream.
+
             try(ObjectOutputStream salida = new ObjectOutputStream(Files.newOutputStream(archivo))){
                 
                 salida.writeObject(productos);
+            }
+            System.out.print("productos guardados " + Files.size(archivo) + " bytes \n");
+
+            if(Files.exists(archivo) &&Files.size(archivo) > 0){
+                System.out.print("El producto es mayor que 0");
             }
         
 
