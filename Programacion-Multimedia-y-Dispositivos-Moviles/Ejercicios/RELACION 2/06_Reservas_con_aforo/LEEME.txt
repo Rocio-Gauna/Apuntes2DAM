@@ -1,0 +1,11 @@
+06 - Reto final: reservas con aforo
+
+Abre el PDF de la Relación 2 y sigue el ejercicio 06.
+Proyecto independiente: Empty Views Activity (Kotlin), package com.example.relacion2.
+
+- MainActivity.kt -> app/src/main/java/com/example/relacion2/MainActivity.kt
+- res/layout/activity_main.xml -> app/src/main/res/layout/activity_main.xml
+- res/values/*.xml -> app/src/main/res/values/
+- res/drawable/*.xml (cuando exista) -> app/src/main/res/drawable/
+
+ARCHIVOS BASE: intencionalmente incompletos; sigue el PDF.

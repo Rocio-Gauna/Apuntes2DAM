@@ -1,0 +1,24 @@
+RELACIÓN 2 · REPASO UD1 · PMDM · 2.º DAM
+=====================================
+Material de clase dividido en dos carpetas:
+
+01_Enunciados_y_bases/
+  00_Relacion_2_Repaso_PMDM_UD1.pdf
+  01_...  a  06_...  (base de proyecto por ejercicio)
+02_Soluciones/
+  01_... a 06_... (archivos completos de cada app)
+
+IMPORTANTE: cada ejercicio es un proyecto Android Studio INDEPENDIENTE.
+- Crea un proyecto con plantilla Empty Views Activity, lenguaje Kotlin.
+- Usa el package name: com.example.relacion2 (se puede reutilizar en proyectos distintos).
+- Sustituye app/src/main/java/com/example/relacion2/MainActivity.kt por el archivo de la carpeta.
+- Sustituye app/src/main/res/layout/activity_main.xml.
+- Copia styles.xml y colors.xml a app/src/main/res/values.
+- Si el ejercicio incluye fondo_panel.xml, cópialo a app/src/main/res/drawable.
+- Conserva el resto de archivos generados por Android Studio (Gradle, manifest y tema de la app).
+- No uses Jetpack Compose. No se necesitan arrays, listas ni bucles.
+- Las bases están sin resolver; el PDF contiene los requisitos y ejemplos de comprobación.
+- Los archivos de Soluciones sí contienen la implementación completa de cada pantalla.
+
+NOTA: los estilos de vistas XML se aplican con style="@style/NombreEstilo".
+Si Android Studio crea un proyecto con un package distinto, ajusta la línea package del Kotlin.
