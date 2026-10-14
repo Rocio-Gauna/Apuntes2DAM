@@ -1,3 +1,6 @@
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,9 +13,27 @@ public class GuardarProductosBinario {
 
         // TODO 1: crear una lista con al menos cuatro Producto.
         List<Producto> productos = new ArrayList<>();
-        
-        // TODO 2: crear la carpeta datos si hace falta.
-        // TODO 3: guardar la lista completa con ObjectOutputStream.
+        productos.add(new Producto(1, "raton", 012, 6));
+        productos.add(new Producto(2, "teclado", 013, 8));
+        productos.add(new Producto(3, "pantalla", 014, 10));
+        productos.add(new Producto(4, "mouse", 015, 5));
+
         // TODO 4: controlar IOException.
+        try {
+            // TODO 2: crear la carpeta datos si hace falta.
+            if(Files.notExists(archivo)){
+                Files.createDirectories(archivo.getParent());
+                Files.createFile(archivo);
+            }
+            // TODO 3: guardar la lista completa con ObjectOutputStream.
+            try(ObjectOutputStream salida = new ObjectOutputStream(Files.newOutputStream(archivo))){
+                
+                salida.writeObject(productos);
+            }
+        
+
+        }catch (IOException e){
+            System.err.println("error: " + e.getMessage());
+        }
     }
 }
