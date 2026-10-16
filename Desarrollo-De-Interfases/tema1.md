@@ -1,4 +1,4 @@
-**Confeccion de interfaves de usuario**
+ # **Confeccion de interfaves de usuario**
 ui vs ux 
 
 user interface(interfaz de usuarios)
@@ -12,4 +12,31 @@ IPO/HCI
 principios de hansen para el diseños de interfaces. 
 
 
+## Ejercicio 
+Analizar una web/app al gusto y señalar los puntos fuertes y flojos de diseño y cual es la experiencia de usuario resultante 
+analizar su version responsive:
 
+
+### Ejercicio de desarrollo de interfaces.
+
+Analizar una web/app a gusto y señalar los puntos fuertes y flojos de diseño y cual es la experiencia de usuario. 
+Analizar su versión responsive.
+
+ Analizo el home de https://unahur.edu.ar/ es la web de la universidad nacional de hurlingham de buenos aires. 
+
+Puntos fuertes: 
+Señala una gran información académica
+ Al comienzo nos encontramos con un punto muy fuerte que es la identidad de la universidad pública.
+Incluye información tanto para alumnos como docente y gente de la comunidad, miembros y futuros estudiantes . 
+Incluye sus diferentes redes sociales al respecto. 
+Tiene cantidad de información de horarios estudiantes, ofertas académicas.
+
+
+Cuenta con un mapa donde señala la ubicación del establecimiento. 
+
+
+Los puntos más débil o flojos :  
+La organización: cuenta con mucho contenido en una misma página, puede costar identificar qué información es prioritaria
+Jerarquía visual las noticias, los accesos y la información institucional compiten por la información, el usuario puede tardar más en encontrar el tema puntual de lo que se está buscando 
+
+El diseño responsive permite que una web se adapte a distintos tamaños de pantallas, esta página web contiene numerosos apartados, enlaces y noticias lo cual está en la medida justa en el cual se reorganiza en pantallas pequeñas. 
