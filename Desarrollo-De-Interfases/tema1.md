@@ -40,3 +40,15 @@ La organización: cuenta con mucho contenido en una misma página, puede costar 
 Jerarquía visual las noticias, los accesos y la información institucional compiten por la información, el usuario puede tardar más en encontrar el tema puntual de lo que se está buscando 
 
 El diseño responsive permite que una web se adapte a distintos tamaños de pantallas, esta página web contiene numerosos apartados, enlaces y noticias lo cual está en la medida justa en el cual se reorganiza en pantallas pequeñas. 
+
+
+---
+
+Ejercicios: Tranforma los siguientes nuemro binarios en decimales. 
+1) 101 = 5
+2) 1001 = 9
+3) 1110 =14
+4) 10010
+5) 11000
+6) 100000
+7) 1000000000
