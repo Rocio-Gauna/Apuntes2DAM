@@ -34,13 +34,13 @@ def calcular_total(precio, cantidad, descuento):
 
 #Solo nos va a mostrar el resultado por pantalla aqui deberian ir los print. 
 def mostrar_resumen(datos, total):
-    print=(f"\n==== RESUMEN ====")
-    print=(f"Cliente: {datos['cliente']}")
-    print=(f"Producto: {datos['producto']}")
-    print=(f"Pecio Unitario: {datos['precio']:.2f} EUR")
-    print=(f"Cantidad: {datos['cantidad']}")
-    print=(f"Descuento: {datos['descuento']:.2f} %")
-    print=(f"total: {total} EUR")
+    print(f"\n==== RESUMEN ====")
+    print(f"Cliente: {datos['cliente']}")
+    print(f"Producto: {datos['producto']}")
+    print(f"Pecio Unitario: {datos['precio']:.2f} EUR")
+    print(f"Cantidad: {datos['cantidad']}")
+    print(f"Descuento: {datos['descuento']:.2f} %")
+    print(f"total: {total} EUR")
 
 
 #MAIN 
@@ -50,6 +50,7 @@ def main():
     #pide total
     total = calcular_total(datos["precio"], datos["cantidad"], datos["descuento"])
     mostrar_resumen(datos, total)
+ 
 
 #Si el archivo se ejecuta directamente se escribe de esta manera ( o sea que no se importa desde otro lugar ) 
 if __name__ == "__main__":
