@@ -7,21 +7,21 @@ class Producto:
         self.precio = precio
         self.stock = stock
 
-    def mostrar(self):
-        print(f"Nombre: {self.nombre}")
-        print(f"Precio: {self.precio}")
-        print(f"Stock: {self.stock}")
 
     def vender(self, cantidad):
-        if cantidad <= self.stock:
+        if cantidad <= 0 or cantidad > self.stock:
             self.stock -= cantidad
             return True
         else:
             return False
 
     def reponer(self, cantidad):
-        self.stock += cantidad
-producto1 = Producto("Monitor", 150, 10)
-producto1.mostrar()
-producto1.vender(3)
-producto1.mostrar()
+        if cantidad > 0:
+            self.stock += cantidad
+
+producto = Producto("Monitor", 150, 10)
+print(f"Stock inicial: {producto.stock}")
+print(f"Ventas de 2 unidades: {producto.vender(2)}")
+print(f"Venta de 10 unidades: {producto.Vender(10)}")
+producto.reponer(4)
+print(f"Stock despues de reponer 4 unidades: {producto.stock}")
