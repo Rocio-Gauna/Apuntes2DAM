@@ -12,7 +12,7 @@ class Producto:
         self.precio = precio
         self.stock = stock
 
-class lineaVenta:
+class LineaVenta:
     def __init__(self, codigo_producto, cantidad, precio_unitario):
         self.codigo_producto = codigo_producto
         self.cantidad = cantidad
