@@ -121,3 +121,7 @@ Paso 3: agrupar. En el desplegable Agrupar por eliges una opción disponible, po
 Cada grupo se despliega al hacer clic. El nombre exacto de las opciones puede variar según tu instalación; el enunciado dice “una opción disponible”.
 
 Paso 4: retirar filtro y agrupación. Haces clic en la x de cada etiqueta de la barra (o la desmarcas en el desplegable). La vista vuelve a mostrar todos los contactos, sin agrupar. Observa que ninguna ficha ha desaparecido: solo cambió la forma de verlas.
+
+
+ejercicio 2:
+
