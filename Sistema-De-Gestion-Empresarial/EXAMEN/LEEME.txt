@@ -1,0 +1,10 @@
+UD1 · PT1 · PYTHON · BICIALERTA
+Duración: 120 minutos
+
+Ejecutar en la carpeta del proyecto:
+    python main.py
+
+El menú y las validaciones de entradas del usuario ya están preparados en main.py.
+Completa los métodos de modelos.py y las funciones CSV de persistencia.py.
+El CSV proporcionado incluye tres bicicletas de partida.
+No se incluyen soluciones.

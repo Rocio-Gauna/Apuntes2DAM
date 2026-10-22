@@ -202,3 +202,4 @@ class Floristeria:
         for venta in self.ventas_cerradas:
             acumulado = acumulado + venta.calcular_total()
         return round(acumulado, 2)
+        
