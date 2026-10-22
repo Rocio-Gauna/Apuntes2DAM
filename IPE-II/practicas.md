@@ -297,3 +297,15 @@ plan de acccion para buscar empleo
 cv carta de presentacion
 pruebas psicotecnicas y entrevistas
 fase final
+
+
+TEMA NUEVO
+
+Propia empresa
+
+Autoempleo
+actividad profesional.
+
+el empresariado
+persona capz de identificar una necesidad, reunir los recursos necesarios. 
+
