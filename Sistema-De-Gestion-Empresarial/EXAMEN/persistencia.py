@@ -15,7 +15,7 @@ def cargar_bicicletas(ruta):
     bicicletas = [] 
     
     #Si el archivo no existe, devuelvo la lista vacia sin error
-    if ruta.exists():
+    if not ruta.exists():
         return bicicletas
 
     # Abro el archivo en lectura, con UTF-8; with lo cierra solo al terminar
