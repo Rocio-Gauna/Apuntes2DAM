@@ -309,3 +309,6 @@ actividad profesional.
 el empresariado
 persona capz de identificar una necesidad, reunir los recursos necesarios. 
 
+La empresa y los valores. 
+ la resposabilidad social corporativa es el conjunto de obligaciones. 
+ y compromisos que la empresas adquieren con los grupos. 
