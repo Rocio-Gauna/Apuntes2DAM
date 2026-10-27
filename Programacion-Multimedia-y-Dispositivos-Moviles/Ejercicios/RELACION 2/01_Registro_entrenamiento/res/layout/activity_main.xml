@@ -13,5 +13,11 @@
         <!-- TODO: construye la interfaz completa siguiendo los id del PDF:
              etNombre (texto), etMinutos (entero), etIntensidad (entero), btnRegistrar, btnLimpiar, tvResultado.
              Aplica los estilos definidos en res/values/styles.xml. -->
-    </LinearLayout>
+            <EditText 
+            android:id="@+id/etMinutos"
+            style="@style/CampoFormulario"
+            android:hint="Minutos(1 a 300)"
+            android:inputType="number"/>
+
+            </LinearLayout>
 </ScrollView>
