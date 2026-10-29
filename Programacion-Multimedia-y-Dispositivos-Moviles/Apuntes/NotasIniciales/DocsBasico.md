@@ -157,3 +157,42 @@ val calificacion = when {
 }
 
 ```
+
+## XML
+
+``` xml
+<Tipo
+    android:id="@+id/nombre"        ← 1º  quién es (nombre para Kotlin)
+    style="@style/MiEstilo"         ← 2º  cómo se ve (aspecto común)
+    android:hint / text / ...       ← 3º  lo propio de esta vista
+    android:inputType / ...         ← 4º  su comportamiento
+    />
+```
+
+`style`no lleva android: adelante. se escribe como style="@style/CampoFormulario"
+@+id/nombre crea el id y se escribe solo en la vista donde lo defines. @style/ y @drawable/ no llevan +, porque ya existen.
+`android:inputType="number"` teclado numerico y solo digitos.
+
+cuando me piden un radio group dentro del radioButton
+
+```XML
+<!-- Grupo de vehículo: horizontal, con sus dos RadioButton DENTRO -->
+        <RadioGroup
+            android:id="@+id/___"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="___">
+
+            <RadioButton
+                android:id="@+id/___"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="___" />
+
+            <RadioButton
+                android:id="@+id/___"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="___" />
+        </RadioGroup>
+```
