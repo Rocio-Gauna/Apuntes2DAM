@@ -4,11 +4,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class GestorInscripciones {
+    // es una constante ya que la linea cabecera es siempre la misma
     private static final String CABECERA = "id;persona;taller;plazas";
 
     // TODO 1.1 - Leer el CSV en UTF-8, ignorar cabecera y validar TODAS las filas.
@@ -16,7 +15,21 @@ public class GestorInscripciones {
     // Si una fila es incorrecta o hay IDs duplicados, lanzar IOException.
     public static List<Inscripcion> cargar(Path archivo) throws IOException {
         // PASO 1: prepara la lista, recorre las filas del CSV y valida campos.
-        return new ArrayList<>();
+        // CREAMOS UNA LISTA. donde iran las inscripciones. por ahora esa lista esta vacia.
+        List<Inscripcion>inscripciones = new ArrayList<>();
+        // validamos la lista, si no existe devolvemos una vacia y termino aqui
+        //Esto cumple: " si el archivo no existe, devolcer una lista vacia"
+        if(Files.notExists(archivo)){
+            return inscripciones;
+        }
+
+        //Copio todas las linas del archivo a una lista de texto en UTF-8
+        //LEEMOS EL CSV en UTF_8
+        List<String> lineas = Files.readAllLines(archivo, StandardCharsets.UTF_8);
+
+        //TEMPORAL PARA VERIFICAR QUE LA LECTURA FUNCIONA
+        System.out.println("TEMPORAL- LINEAS LEIDAS: "+ lineas.size());
+        return inscripciones;
     }
 
     // TODO 1.2 - Buscar por ID. Devolver la inscripción o null.
