@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equipos>
+    <equipo id="201">
+        <nombre>Micrófono inalámbrico</nombre>
+        <unidades>5</unidades>
+    </equipo>
+    <equipo id="202">
+        <nombre>Cables &amp; adaptadores</nombre>
+        <unidades>8</unidades>
+    </equipo>
+    <equipo id="203">
+        <nombre>Cámara réflex</nombre>
+        <unidades>2</unidades>
+    </equipo>
+    <equipo id="204">
+        <nombre>Altavoz portátil</nombre>
+        <unidades>4</unidades>
+    </equipo>
+</equipos>
