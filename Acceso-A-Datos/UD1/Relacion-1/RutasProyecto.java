@@ -1,26 +1,31 @@
 
 import java.nio.file.Path;
 
+
+
 public class RutasProyecto {
-
     public static void main(String[] args) {
-    // construye el onjeto Path que represeta la carpeta datos "Path.of("datos")".
-    Path carpeta = Path.of( "datos");
-    //resolve() contruye la ruta nueva añadiendo "clubes.txt"
-    Path archivo = carpeta.resolve("clubes.txt");
-    Path copia = carpeta.resolve("copias");
+        //Ejercicio que representa las RUTAS de la carpeta datos. El fichero clubes.txt
+        // y una subcarpeta "copias". NO CREA NADA 
+        
+        //Con el path nombramos la ruta de datos
+        Path carpetaDatos = Path.of("datos"); // /datos
+        
+        // nombramos la ruta de datos con cluebes.txt dentro
+        Path carpetaClubes = carpetaDatos.resolve("clubes.txt"); //  /datos/clubes.txt
+        
+        // nombramos la ruta de datos dentro de datos la copia
+        Path carpetaCopias = carpetaDatos.resolve("copias"); // /datos/copias
 
-    // muestra las 3 rutas relativas con el "System.out.println"
-        System.out.println("Ruta relativa carpeta datos: " + carpeta);
-        System.out.println("Ruta relativa archivo: " + archivo);
-        System.out.println("Ruta relativa copia: " + copia);
+        //Mostramos las 3 rutas relativas y sus  correpondiente rutas
 
-    //muestra las 3 rutas absolutas con toAbsolutePath() + system.out.println
-
-    System.out.println("Ruta absoluta carpeta: "+ carpeta.toAbsolutePath());
-    System.out.println("Ruta absoluta archivo: "+ archivo.toAbsolutePath());
-    System.out.println("Ruta absoluta copias: "+ copia.toAbsolutePath());
-    
-    // no es necesario poner el trycatch por que no esta creando nada solo contrusyendo en memoria y mostrandolo en consola 
+        System.out.println("Ruta relativa: " + carpetaDatos);
+        System.out.println("Ruta relativa: " + carpetaClubes);
+        System.out.println("Ruta relativa: " + carpetaCopias);
+        
+        //Mostramos las rutas absolutas de cada
+        System.out.println("Ruta absoluta: "+ carpetaDatos.toAbsolutePath());
+        System.out.println("Ruta relativa: " + carpetaClubes.toAbsolutePath());
+        System.out.println("Ruta relativa: " + carpetaCopias.toAbsolutePath());
     }
 }
