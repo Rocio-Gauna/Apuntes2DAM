@@ -24,7 +24,7 @@ import org.w3c.dom.Element;
 
 public class RepositorioEquipos {
 
-    // TODO 2.1 - Recuperar la lista serializada con ObjectInputStream.
+    // TODO 2.1 - Recuperar  o recuperar la lista serializada con ObjectInputStream.
     // Si no existe el .dat, devolver lista vacía. Comprobar tipos, IDs y duplicados.
     public static List<Equipo> cargar(Path archivo) throws IOException {
         // PASO 1: si el fichero falta, devuelve una lista vacía.
@@ -34,13 +34,13 @@ public class RepositorioEquipos {
         List<Equipo> equipos = new ArrayList<>();
         // TEMPORAL 1: muestra dónde busca Java el archivo y si existe.
         // Esta línea va FUERA del try, así se imprime siempre.
-        System.out.println("TEMPORAL - busco: " + archivo.toAbsolutePath() + " | existe: " + Files.exists(archivo));
+        //System.out.println("TEMPORAL - busco: " + archivo.toAbsolutePath() + " | existe: " + Files.exists(archivo));
 
         //Si el dat no existe, devulvo la lista vacia y termina aqui. 
         if (Files.notExists(archivo)) {
             return equipos;
         }
-        // NUEVO: conjunto donde apunto cada ID que voy viendo (sin repetidos).
+        // declaramos conjunto donde apunto cada ID que voy viendo (sin repetidos).
         Set<Integer> idsVistos = new HashSet<>();
 
         //ABRIR EL ARCHIVO BINARIO: los bytes va en un lector de objetos
@@ -95,6 +95,7 @@ public class RepositorioEquipos {
         //Averiguamos la carpeta donde ira el archivo (para datos/equipos.dat, es "datos"). con un path
         Path carpeta = archivo.getParent();
 
+        
         //si la ruta tiene carpeta, me aseguro de que exista; si falta la creo
         if (carpeta != null) {
             Files.createDirectories(carpeta);
