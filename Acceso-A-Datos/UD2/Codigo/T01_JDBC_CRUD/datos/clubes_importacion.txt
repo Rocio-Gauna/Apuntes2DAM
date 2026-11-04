@@ -1,0 +1,3 @@
+101;Córdoba CF;Córdoba
+102;Real Jaén;Jaén
+103;Recreativo de Huelva;Huelva

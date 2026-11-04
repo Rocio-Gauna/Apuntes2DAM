@@ -1,0 +1,20 @@
+services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: root_clase
+      MYSQL_DATABASE: ad_ud2
+      MYSQL_USER: ad_user
+      MYSQL_PASSWORD: ad_pass
+    ports:
+      - "127.0.0.1:3307:3306"
+    volumes:
+      - mysql_ad_ud2:/var/lib/mysql
+      - ./init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -u root -p$$MYSQL_ROOT_PASSWORD --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 24
+volumes:
+  mysql_ad_ud2:
