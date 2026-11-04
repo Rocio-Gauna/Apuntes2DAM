@@ -1,23 +1,9 @@
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.XMLConstants;
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
 
 public class RepositorioEquipos {
     // TODO 2.1 - Recuperar la lista serializada con ObjectInputStream.
@@ -25,7 +11,36 @@ public class RepositorioEquipos {
     public static List<Equipo> cargar(Path archivo) throws IOException {
         // PASO 1: si el fichero falta, devuelve una lista vacía.
         // Si existe, lee un Object y valida su contenido.
-        return new ArrayList<>();
+
+        //CREAMOS LA LISTA VACIA, DONDE IRAN LOS EQUIPOS
+        List<Equipo> equipos = new ArrayList<>();
+        
+        //Si el dat no existe, devulvo la lista vacia y termina aqui. 
+        if(Files.notExists(archivo)){
+            return equipos;
+        }
+
+        //ABRIR EL ARCHIVO BINARIO: los bytes va en un lector de objetos
+        // UTILIZAMOS EL TRY-WITH-RESOURCES lo cierra al terminar
+        try(ObjectInputStream entrada = new ObjectInputStream(Files.newInputStream(archivo))){
+            //LEO EL OBJETO GUARDADO 
+            Object contenido = entrada.readObject();
+
+            //Compruebo que la caja es una lista; si no lo es el archivo no sirve. 
+            if(!(contenido instanceof List<?>listaLeida)){
+                throw new IOException("el archivo no tiene una lista");
+            }
+
+            // TEMPORALMENTE : Solo para comprobar la lectura.
+            System.out.println("TEMPORALMENTE: ELEMENTOS LEIDOS"+ listaLeida.size());
+            // TEMPORAL: muestra dónde busca Java el archivo y si existe. La borraremos después.
+System.out.println("TEMPORAL - busco: " + archivo.toAbsolutePath() + " | existe: " + Files.exists(archivo));
+        }catch(ClassNotFoundException e){
+            //Convierto el error en una exception que es lo que declara el metodo
+            throw new IOException("No se encontro la clase de los datos"+ e.getMessage());
+        }
+        //devolvemos la lista vacia: sin equipos en ella
+        return equipos;
     }
 
     // TODO 2.2 - Crear carpeta y guardar la LISTA COMPLETA con ObjectOutputStream.
