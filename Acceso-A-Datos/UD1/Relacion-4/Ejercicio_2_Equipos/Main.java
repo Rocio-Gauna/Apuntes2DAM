@@ -51,6 +51,7 @@ public class Main {
                                 System.out.println("Nuevas Unidades: ");
                                 int unidades = Integer.parseInt(teclado.nextLine().trim());
 
+                                
                                 //LLAMO AL REPO CON LA LISTA QUE TENGO EN MEMORIA: ME DA UN BOOLEAN TRUE O FALSE
                                 boolean cambiado = RepositorioEquipos.cambiarUnidades(equipos, id, unidades);
 
