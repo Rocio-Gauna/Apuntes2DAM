@@ -1,9 +1,11 @@
+
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
         Path binario = Path.of("datos", "equipos.dat");
         Path xml = Path.of("datos", "equipos_exportados.xml");
@@ -40,7 +42,7 @@ public class Main {
                                 // e informar al usuario desde aquí (nunca desde el repositorio).
                                 // Pide ID, unidades y llama al repositorio.
                                 //System.out.println("TODO 2.5-A pendiente.");
-                                
+
                                 //PIDO EL ID DEL EQUIPO QUE QUIERO CAMBIAR
                                 System.out.println("ID del equipo: ");
                                 int id = Integer.parseInt(teclado.nextLine().trim());
@@ -53,8 +55,7 @@ public class Main {
                                 boolean cambiado = RepositorioEquipos.cambiarUnidades(equipos, id, unidades);
 
                                 //MAIN es quien informa al usuario, con un mensaje distinto segun el resultado
-
-                                System.out.println(cambiado?"Unidades cambiadas en memoria. Usala opcion 4 para guardar": "ID inexistente o unidades negativas");
+                                System.out.println(cambiado ? "Unidades cambiadas en memoria. Usala opcion 4 para guardar" : "ID inexistente o unidades negativas");
                             }
                             case 4 -> {
                                 // EJEMPLO COMPLETO: guardado explícito.
@@ -76,10 +77,17 @@ public class Main {
                             case 6 -> {
                                 // TODO 2.5-C: llamar a exportarXml(xml, equipos).
                                 // Exporta la lista a XML.
-                                System.out.println("TODO 2.5-C pendiente.");
+                                //System.out.println("TODO 2.5-C pendiente.");
+                                // Exporto la lista que tengo en memoria al archivo XML (la variable xml ya existe arriba).
+                                RepositorioEquipos.exportarXml(xml, equipos);
+
+                                // Main informa al usuario de dónde quedó el archivo.
+                                System.out.println("XML exportado en " + xml);
                             }
-                            case 0 -> System.out.println("Hasta luego.");
-                            default -> System.out.println("Opción desconocida.");
+                            case 0 ->
+                                System.out.println("Hasta luego.");
+                            default ->
+                                System.out.println("Opción desconocida.");
                         }
                     } catch (NumberFormatException e) {
                         System.out.println("Introduce un número entero válido.");
