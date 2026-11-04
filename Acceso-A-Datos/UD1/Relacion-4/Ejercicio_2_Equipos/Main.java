@@ -39,7 +39,22 @@ public class Main {
                                 // TODO 2.5-A: pedir ID y unidades, llamar a cambiarUnidades,
                                 // e informar al usuario desde aquí (nunca desde el repositorio).
                                 // Pide ID, unidades y llama al repositorio.
-                                System.out.println("TODO 2.5-A pendiente.");
+                                //System.out.println("TODO 2.5-A pendiente.");
+                                
+                                //PIDO EL ID DEL EQUIPO QUE QUIERO CAMBIAR
+                                System.out.println("ID del equipo: ");
+                                int id = Integer.parseInt(teclado.nextLine().trim());
+
+                                //PIDO las nuevas unidades
+                                System.out.println("Nuevas Unidades: ");
+                                int unidades = Integer.parseInt(teclado.nextLine().trim());
+
+                                //LLAMO AL REPO CON LA LISTA QUE TENGO EN MEMORIA: ME DA UN BOOLEAN TRUE O FALSE
+                                boolean cambiado = RepositorioEquipos.cambiarUnidades(equipos, id, unidades);
+
+                                //MAIN es quien informa al usuario, con un mensaje distinto segun el resultado
+
+                                System.out.println(cambiado?"Unidades cambiadas en memoria. Usala opcion 4 para guardar": "ID inexistente o unidades negativas");
                             }
                             case 4 -> {
                                 // EJEMPLO COMPLETO: guardado explícito.
@@ -49,7 +64,14 @@ public class Main {
                             case 5 -> {
                                 // TODO 2.5-B: reemplazar equipos por cargar(binario).
                                 // Recarga la lista desde el fichero.
-                                System.out.println("TODO 2.5-B pendiente.");
+                                //System.out.println("TODO 2.5-B pendiente.");
+
+                                //VUELVO A LEER EL ARCHIVO SUSTITUYO LA LISTA DE MEMORIA POR LA DEL DISCO
+                                //ASI SE DESCARTAN LOS CAMBIOS QUE NO SE HAYAN GUARDADO
+                                equipos = RepositorioEquipos.cargar(binario);
+
+                                //aviso al usuario desde main
+                                System.out.println("Lista recargada desde el archivo");
                             }
                             case 6 -> {
                                 // TODO 2.5-C: llamar a exportarXml(xml, equipos).
