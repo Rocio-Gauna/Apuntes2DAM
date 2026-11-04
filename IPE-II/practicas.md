@@ -312,3 +312,41 @@ persona capz de identificar una necesidad, reunir los recursos necesarios.
 La empresa y los valores. 
  la resposabilidad social corporativa es el conjunto de obligaciones. 
  y compromisos que la empresas adquieren con los grupos. 
+
+ Estudio de mercado:
+
+ como aplicar marketing en un mercado. ?
+ averigua la respuesta de los compradores potenciales, ante un producto o sevicio. 
+ criterios de segmentacion
+ geograficos, Demograficos, personales, familiares, Psicologicos. conductas por uso. 
+ Estrategia de segmentacion
+ Diferencia. indiferencia concetrada
+ 
+
+los agentes de mercado 
+
+fabricantes de bienes 
+
+oceano rojo y oceano azul. 
+
+
+Esqumas de las cuatros acciones: nueva curva de valor
+reducir, eliminar, crear, incrementar
+
+EL MARKETING 
+Actividad que satisface a los clientes para lograr los objetivos de la empresa: beneficios crecimiento y fines sociales.
+
+marketing estrategico Estudio previo de mercado, pbjetivos y diseño de la estrategia: el plan de marketing 
+
+marketing operativo
+Acciones concreta sobre producto, precio, promocion distribucion 
+
+caso spotify
+
+
+El posicionamiento del producto 
+como queremos que le consumidor perciba el producto frente a la competencia
+
+en calidad diferencia en precio. 
+
+
