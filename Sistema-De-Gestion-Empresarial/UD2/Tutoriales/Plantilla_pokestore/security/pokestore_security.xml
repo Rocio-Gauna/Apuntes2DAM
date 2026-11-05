@@ -1,4 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Tutorial 04: grupos de seguridad -->
+<record id="pokestore_figure_view_list" model="ir.ui.view">
+<field name="name">pokestore.figure.list</field>
+<field name="model">pokestore.figure</field>
+<field name="arch" type="xml">
+<list string="Figuras">
+<field name="name"/>
+<field name="pokemon"/>
+<field name="collection"/>
+<field name="rarity"/>
+<field name="price"/>
+<field name="stock"/>
+</list>
+</field>
+</record>
+<record id="pokestore_figure_view_form" model="ir.ui.view">
+<field name="name">pokestore.figure.form</field>
+<field name="model">pokestore.figure</field>
+<field name="arch" type="xml">
+<form string="Figura">
+<sheet>
+<group>
+<group>
+<field name="name"/>
+<field name="pokemon"/>
+<field name="collection"/>
+</group>
+<group>
+<field name="rarity"/>
+<field name="price"/>
+<field name="stock"/>
+<field name="active"/>
+</group>
+</group>
+</sheet>
+</form>
+</field>
+</record>
+<record id="pokestore_figure_action" model="ir.actions.act_window">
+<field name="name">Figuras</field>
+<field name="res_model">pokestore.figure</field>
+<field name="view_mode">list,form</field>
+</record>
 </odoo>

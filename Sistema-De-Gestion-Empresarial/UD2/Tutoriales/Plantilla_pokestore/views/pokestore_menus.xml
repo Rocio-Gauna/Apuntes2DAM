@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <!-- Tutorial 01: menús -->
+    <?xml version="1.0" encoding="utf-8"?>
+    <odoo>
+        <menuitem 
+        id="pokestore_menu_root" name="PokeStore" sequence="30"/>
+        <menuitem 
+            id="pokestore_menu_catalog" 
+            name="Catálogo" 
+            parent="pokestore_menu_root" 
+            sequence="10" />
+        <menuitem 
+            id="pokestore_menu_figures" 
+            name="Figuras" 
+            parent="pokestore_menu_catalog" 
+            action="pokestore_figure_action" 
+            sequence="10" />
+    </odoo>
 </odoo>
