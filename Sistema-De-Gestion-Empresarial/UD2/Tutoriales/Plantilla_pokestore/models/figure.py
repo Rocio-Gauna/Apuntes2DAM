@@ -1,4 +1,6 @@
 from odoo import fields, models
+
+
 class PokeStoreFigure(models.Model):
  
    _name = "pokestore.figure"
@@ -17,6 +19,6 @@ class PokeStoreFigure(models.Model):
          default="normal",
          required=True,
          )
-price = fields.Float(string="Precio", required=True)
-stock = fields.Integer(string="Stock", default=0)
-active = fields.Boolean(default=True)
+   price = fields.Float(string="Precio", required=True)
+   stock = fields.Integer(string="Stock", default=0)
+   active = fields.Boolean(default=True)
