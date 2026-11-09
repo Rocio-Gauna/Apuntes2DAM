@@ -106,3 +106,9 @@ pregunta inicial:
 
 
 
+el proceso de la motivacion en un programador. 
+elemtno ejemplo de progrmador
+necesidad quiere sentirse valorado por el trabajo que realiza
+tension lleva varios sprints trabajando, pero no recibe comentarios ni reconocimiento
+conducta prepara una demostracion y presenta las mejora que ha realizado
+resultado
