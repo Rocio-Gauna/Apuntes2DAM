@@ -94,3 +94,15 @@ Ficha de analisis de incidencia:
 - Estado
 - Solucion aplicada.
 
+motivacion laboral:
+
+Objetivo de aprendizaje
+comprender la motivacion como impulso personal y como elemento que la empresa intenta favorecer. 
+
+pregunta inicial:
+"Imaginad que mañana coseguis vuestro primer trabajo como programadores ¿Que tendria que ofreceros esa empresa para que os levantaseis cada mañana con ganas de ir a trabajar?
+
+
+
+
+
