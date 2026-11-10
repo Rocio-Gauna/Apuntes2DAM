@@ -606,3 +606,4 @@ public static void guardar(Path archivo, List<MaquinaArcade> lista) throws IOExc
 Cómo se resume
 
 Con cualquier formato, tu trabajo es el mismo en tres pasos: leer el archivo a una lista de objetos, validar todo (lanzando IOException ante cualquier problema), y escribir la lista completa. Lo único que se adapta es cómo se hace el primer y el tercer paso. Lo que se aprende para el CSV vale para el resto de formatos, y por eso si en un enunciado cambia el tipo de archivo, empieza por preguntarte: “¿cómo se leen y cómo se escriben los objetos en este formato?”, y deja todo lo demás tal cual.
+...
