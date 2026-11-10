@@ -607,3 +607,476 @@ Cómo se resume
 
 Con cualquier formato, tu trabajo es el mismo en tres pasos: leer el archivo a una lista de objetos, validar todo (lanzando IOException ante cualquier problema), y escribir la lista completa. Lo único que se adapta es cómo se hace el primer y el tercer paso. Lo que se aprende para el CSV vale para el resto de formatos, y por eso si en un enunciado cambia el tipo de archivo, empieza por preguntarte: “¿cómo se leen y cómo se escriben los objetos en este formato?”, y deja todo lo demás tal cual.
 ...
+
+
+
+
+
+csv... juegos
+
+```java
+
+
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.util.*;
+
+public class GestorVideojuegos {
+
+    private static final String CABECERA = "id;titulo;plataforma;stock;activo";
+
+    // TODO 1.1 (2 puntos): cargar y validar el CSV según el enunciado.
+    public static List<Videojuego> cargar(Path archivo) throws IOException {
+        // "juegos" es una VARIABLE que guarda un OBJETO de tipo lista, fabricado con "new".
+        // Empieza vacía: es la caja donde meteré los videojuegos buenos.
+        List<Videojuego> juegos = new ArrayList<>();
+
+        // Si el archivo NO existe, entrego la caja vacía y termino. No es un error.
+        if (Files.notExists(archivo)) {
+            return juegos;
+        }
+
+        // Copio todos los renglones del archivo a una lista de textos (UTF_8 para las tildes).
+        List<String> lineas = Files.readAllLines(archivo, StandardCharsets.UTF_8);
+
+        // Si no hay ningún renglón, el archivo tiene cero bytes: error.
+        if (lineas.isEmpty()) {
+            throw new IOException("El fichero está vacío");
+        }
+
+        // Si el primer renglón NO es igual a la cabecera exacta: error.
+        if (!lineas.get(0).equals(CABECERA)) {
+            throw new IOException("Línea 1: la cabecera no es la esperada");
+        }
+
+        // NUEVO: "idsVistos" es una VARIABLE que guarda un OBJETO de tipo Set (un conjunto).
+        // Un conjunto es como una lista de invitados: no deja apuntar a nadie dos veces.
+        // Lo uso para detectar IDs repetidos. Integer es la versión "objeto" de int.
+        Set<Integer> idsVistos = new HashSet<>();
+
+        // Bucle: repito el bloque una vez por cada renglón de datos (empiezo en 1, el 0 es la cabecera).
+        for (int posicion = 1; posicion < lineas.size(); posicion++) {
+
+            // Saco el renglón de esta vuelta y lo guardo en la variable "linea".
+            String linea = lineas.get(posicion);
+
+            // Sumo 1 para que el mensaje de error diga el número de línea que ves en el editor.
+            int numeroLinea = posicion + 1;
+
+            // Si el renglón está vacío o solo tiene espacios: error.
+            if (linea.isBlank()) {
+                throw new IOException("Línea " + numeroLinea + ": línea vacía");
+            }
+
+            // Corto el renglón por cada ";" y guardo los trozos en un ARRAY llamado "campos".
+            // campos[0] es el id, campos[1] el título, campos[2] la plataforma,
+            // campos[3] el stock y campos[4] el activo.
+            String[] campos = linea.split(";", -1);
+
+            // Si no hay exactamente 5 trozos: error. Se mira ANTES de usar campos[4].
+            if (campos.length != 5) {
+                throw new IOException("Línea " + numeroLinea
+                        + ": se esperaban 5 campos y hay " + campos.length);
+            }
+
+            // Si "activo" no es exactamente "true" ni exactamente "false": error.
+            if (!campos[4].equals("true") && !campos[4].equals("false")) {
+                throw new IOException("Línea " + numeroLinea
+                        + ": activo debe ser exactamente true o false");
+            }
+
+            // NUEVO: declaro dos VARIABLES numéricas FUERA del try.
+            // Si las creara dentro, solo existirían dentro del try y no podría usarlas después.
+            int id;
+            int stock;
+
+            // "try" significa "intenta esto, que podría fallar".
+            try {
+                // Integer.parseInt es un MÉTODO que convierte un texto ("101") en un número (101).
+                // Su ARGUMENTO es el texto. trim() es un método del texto que quita espacios sobrantes.
+                id = Integer.parseInt(campos[0].trim());
+                stock = Integer.parseInt(campos[3].trim());
+
+                // "catch" significa "si falló con este tipo de error, haz esto otro".
+                // NumberFormatException es el error que lanza parseInt cuando el texto no es un número.
+            } catch (NumberFormatException e) {
+                // Lo convierto en IOException porque el enunciado lo pide.
+                throw new IOException("Línea " + numeroLinea
+                        + ": el ID o el stock no son números enteros");
+            }
+
+            // Convierto el texto "true"/"false" en un boolean de verdad.
+            // Ya es seguro hacerlo, porque arriba comprobé que solo puede ser uno de los dos.
+            boolean activo = Boolean.parseBoolean(campos[4]);
+
+            // Fabrico un OBJETO Videojuego con "new". Sus ARGUMENTOS van en el orden del constructor:
+            // id, titulo, plataforma, stock, activo. El título y la plataforma ya son texto,
+            // no hay que convertirlos.
+            Videojuego juego = new Videojuego(id, campos[1], campos[2], stock, activo);
+
+            // esValido es un MÉTODO de esta misma clase (ya viene hecho). Recibe el objeto
+            // y responde true si: id > 0, stock >= 0, y título y plataforma no están en blanco.
+            // Con "!" pregunto: ¿NO es válido?
+            if (!esValido(juego)) {
+                throw new IOException("Línea " + numeroLinea + ": datos no válidos");
+            }
+
+            // add es un MÉTODO del conjunto: intenta apuntar el ID y responde true si lo apuntó,
+            // o false si ya estaba. Con "!" pregunto: ¿ya estaba? Entonces está repetido.
+            if (!idsVistos.add(id)) {
+                throw new IOException("Línea " + numeroLinea + ": ID repetido (" + id + ")");
+            }
+
+            // El videojuego pasó todas las pruebas: lo meto en la caja.
+            // add es un MÉTODO de la lista: la añade al final.
+            juegos.add(juego);
+        }
+
+        // Solo llego aquí si TODAS las filas eran buenas. Si una falla, el "throw" corta todo antes,
+        // así que nunca devuelvo una carga a medias.
+        return juegos;
+    }
+
+    // TODO 1.2 (1,5 puntos): solo modificar el stock de un videojuego activo.
+    public static boolean actualizarStock(Path archivo, int id, int stock) throws IOException {
+        //throw new UnsupportedOperationException("Pendiente: actualizarStock");
+        // Llamo al método cargar (el que acabamos de hacer): me devuelve la lista con todos los juegos.
+        // "lista" es la VARIABLE donde la guardo.
+        List<Videojuego> lista = cargar(archivo);
+
+        // Llamo al método buscar (ya viene hecho). Sus ARGUMENTOS son la lista y el id.
+        // Me devuelve el OBJETO Videojuego con ese id, o null ("nada") si no existe.
+        Videojuego juego = buscar(lista, id);
+
+        // "||" significa "o". Salgo con false si: no existe (null), O no está activo, O el stock es negativo.
+        // isActivo() es un MÉTODO "get" del objeto: me dice si el juego está activo.
+        // No escribo nada: ni el CSV ni la copia.
+        if (juego == null || !juego.isActivo() || stock < 0) {
+            return false;
+        }
+
+        // getStock() es un MÉTODO "get" del objeto: me da su stock actual.
+        // Si ya es igual al que piden, no hay nada que cambiar.
+        // Devuelvo true (la petición es válida) sin escribir ni crear copia.
+        if (juego.getStock() == stock) {
+            return true;
+        }
+
+        // Método ya hecho: guarda una copia del CSV (.bak) ANTES de cambiar nada.
+        crearCopiaSiExiste(archivo);
+
+        // setStock es un MÉTODO "set" del objeto: le cambia el stock.
+        // Solo cambia este juego, y solo en la memoria. El CSV todavía no cambió.
+        juego.setStock(stock);
+
+        // Método ya hecho: reescribe el CSV entero con la cabecera y todos los juegos de la lista.
+        guardarTodo(archivo, lista);
+
+        // Todo salió bien.
+        return true;
+    }
+
+    // TODO 1.3 (1,5 puntos): eliminar por ID con copia antes de guardar.
+    public static boolean eliminar(Path archivo, int id) throws IOException {
+        //throw new UnsupportedOperationException("Pendiente: eliminar");
+
+        // Leo todos los juegos del archivo.
+        List<Videojuego> lista = cargar(archivo);
+
+        // Fabrico una caja nueva y vacía. Aquí pasaré todos los juegos MENOS el que se elimina.
+        List<Videojuego> restantes = new ArrayList<>();
+
+        // "encontrado" es una VARIABLE boolean: una banderita que empieza bajada (false).
+        // Si veo el ID que busco, la subo (true).
+        boolean encontrado = false;
+
+        // Bucle "for-each": en cada vuelta, "juego" es un Videojuego distinto de la lista.
+        for (Videojuego juego : lista) {
+
+            // getId() es un MÉTODO "get" del objeto. Pregunto si este juego es el que hay que eliminar.
+            if (juego.getId() == id) {
+                // Es el que sobra: NO lo paso a la caja nueva. Solo subo la banderita.
+                encontrado = true;
+            } else {
+                // Es otro: lo paso a la caja nueva para conservarlo.
+                restantes.add(juego);
+            }
+        }
+
+        // Si la banderita sigue bajada, ese ID no existía: devuelvo false sin escribir NADA.
+        if (!encontrado) {
+            return false;
+        }
+
+        // Copia de seguridad antes de reescribir (método ya hecho).
+        crearCopiaSiExiste(archivo);
+
+        // Escribo el archivo con la caja nueva (método ya hecho).
+        // Si "restantes" quedó vacía, guardarTodo escribe igualmente la cabecera.
+        guardarTodo(archivo, restantes);
+
+        return true;
+    }
+
+    // RESUELTOS: no modificar.
+    public static Videojuego buscar(List<Videojuego> lista, int id) {
+        Videojuego encontrado = null;
+        for (Videojuego juego : lista) {
+            if (juego.getId() == id) {
+                encontrado = juego;
+            }
+        }
+        return encontrado;
+    }
+
+    private static boolean textoValido(String texto) {
+        return texto != null && !texto.isBlank() && !texto.contains(";")
+                && !texto.contains("\n") && !texto.contains("\r");
+    }
+
+    public static boolean esValido(Videojuego juego) {
+        return juego != null && juego.getId() > 0 && juego.getStock() >= 0
+                && textoValido(juego.getTitulo()) && textoValido(juego.getPlataforma());
+    }
+
+    public static boolean registrar(Path archivo, Videojuego nuevo) throws IOException {
+        List<Videojuego> lista = cargar(archivo);
+        boolean aceptado = esValido(nuevo) && buscar(lista, nuevo.getId()) == null;
+        if (aceptado) {
+            lista.add(nuevo);
+            crearCopiaSiExiste(archivo);
+            guardarTodo(archivo, lista);
+        }
+        return aceptado;
+    }
+
+    private static void guardarTodo(Path archivo, List<Videojuego> lista) throws IOException {
+        if (archivo.getParent() != null) {
+            Files.createDirectories(archivo.getParent());
+        }
+        List<String> lineas = new ArrayList<>();
+        lineas.add(CABECERA);
+        for (Videojuego juego : lista) {
+            lineas.add(juego.getId() + ";" + juego.getTitulo() + ";" + juego.getPlataforma()
+                    + ";" + juego.getStock() + ";" + juego.isActivo());
+        }
+        Files.write(archivo, lineas, StandardCharsets.UTF_8);
+    }
+
+    private static void crearCopiaSiExiste(Path archivo) throws IOException {
+        if (Files.exists(archivo)) {
+            Files.copy(archivo, Path.of(archivo.toString() + ".bak"), StandardCopyOption.REPLACE_EXISTING);
+        }
+    }
+
+    public static boolean restaurar(Path archivo) throws IOException {
+        Path copia = Path.of(archivo.toString() + ".bak");
+        boolean existe = Files.exists(copia);
+        if (existe) {
+            Files.copy(copia, archivo, StandardCopyOption.REPLACE_EXISTING);
+        }
+        return existe;
+    }
+}
+
+```
+
+
+.dat binario
+
+```java
+
+
+
+import java.io.EOFException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import javax.xml.XMLConstants;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+
+public class RepositorioMaquinas {
+
+    // TODO 2.1 (2 puntos): recuperar y validar la lista serializada.
+    public static List<MaquinaArcade> cargar(Path archivo) throws IOException {
+        // throw new UnsupportedOperationException("Pendiente: cargar");
+
+        List<MaquinaArcade> maquinas = new ArrayList<>();
+        if (Files.notExists(archivo)) {
+            return maquinas;
+        }
+        //Conjunto de IDs vistos. No admite repetidos 
+        Set<Integer> idsVistos = new HashSet<>();
+        // ObjectInputStream "descongela" los objetos guardados en el .dat.
+        // Al estar entre paréntesis del try, se cierra solo al terminar.
+        try (ObjectInputStream entrada = new ObjectInputStream(Files.newInputStream(archivo))) {
+
+            // Lee lo que se guardó. Llega como Object: todavía no sabemos qué es.
+            Object contenido = entrada.readObject();
+
+            // Comprueba que es una lista (un null tampoco pasa).
+            // Si lo es, "listaLeida" es esa misma lista, ya con tipo de lista.
+            if (!(contenido instanceof List<?> listaLeida)) {
+                throw new IOException("El archivo no contiene una lista");
+            }
+
+            // Revisa los elementos uno por uno.
+            for (Object elemento : listaLeida) {
+
+                // Cada elemento debe ser una MaquinaArcade. Un null u otro tipo no pasa.
+                if (!(elemento instanceof MaquinaArcade maquina)) {
+                    throw new IOException("La lista contiene un dato que no es una máquina");
+                }
+
+                // esValida (ya hecha): ID positivo, unidades >= 0 y nombre no vacío.
+                if (!esValida(maquina)) {
+                    throw new IOException("Máquina con datos no válidos (ID " + maquina.getId() + ")");
+                }
+
+                // add devuelve false si el ID ya estaba apuntado: está repetido.
+                if (!idsVistos.add(maquina.getId())) {
+                    throw new IOException("ID repetido: " + maquina.getId());
+                }
+
+                // Pasó todas las comprobaciones: se guarda en la lista.
+                maquinas.add(maquina);
+            }
+
+        } catch (EOFException e) {
+            // Un .dat de cero bytes (o cortado) lanza este error sin mensaje.
+            // Se convierte en uno claro para que Main muestre algo entendible.
+            throw new IOException("El archivo está vacío o incompleto");
+        } catch (ClassNotFoundException e) {
+            // readObject puede lanzar este error; el enunciado pide convertirlo en IOException.
+            throw new IOException("No se encontró la clase de los datos: " + e.getMessage());
+        }
+
+        // Solo se llega aquí si todo era correcto: nunca se devuelve una carga parcial.
+        // Las máquinas con enVenta=false también se cargan.
+        return maquinas;
+    }
+
+    // TODO 2.2 (1 punto): solo modificar máquinas en venta, únicamente en memoria.
+    public static boolean cambiarUnidades(List<MaquinaArcade> lista, int id, int unidades) {
+        //throw new UnsupportedOperationException("Pendiente: cambiarUnidades");
+        // buscar (ya hecho) devuelve la máquina con ese ID, o null si no existe.
+        MaquinaArcade maquina = buscar(lista, id);
+
+        // Se rechaza si no existe, si no está en venta o si las unidades son negativas.
+        // "maquina == null" va primero: así no se le pregunta nada a algo que no existe.
+        if (maquina == null || !maquina.isEnVenta() || unidades < 0) {
+            return false;
+        }
+
+        // Cambia las unidades solo de esa máquina, y solo en memoria.
+        // Si el valor coincide con el anterior, también se acepta.
+        maquina.setUnidades(unidades);
+
+        return true;
+    }
+
+    // TODO 2.3 (2 puntos): exportar TODAS las máquinas de la lista mediante DOM.
+    public static void exportarXml(Path archivo, List<MaquinaArcade> lista) throws IOException {
+        //throw new UnsupportedOperationException("Pendiente: exportarXml");
+
+    try {
+        // Documento XML vacío en memoria: el árbol donde se irá colgando todo.
+        Document documento = DocumentBuilderFactory.newInstance()
+                .newDocumentBuilder().newDocument();
+
+        // Etiqueta raíz <maquinas>.
+        Element raiz = documento.createElement("maquinas");
+        documento.appendChild(raiz);
+
+        // Una vuelta por máquina. Con la lista vacía no hay vueltas y queda solo la raíz.
+        for (MaquinaArcade maquina : lista) {
+
+            // <maquina id="..."> : el ID va como atributo, y los atributos son texto,
+            // por eso String.valueOf convierte el número.
+            Element elementoMaquina = documento.createElement("maquina");
+            elementoMaquina.setAttribute("id", String.valueOf(maquina.getId()));
+
+            // <nombre>: setTextContent escapa el & como &amp; automáticamente.
+            Element elementoNombre = documento.createElement("nombre");
+            elementoNombre.setTextContent(maquina.getNombre());
+
+            // <unidades>: número convertido a texto.
+            Element elementoUnidades = documento.createElement("unidades");
+            elementoUnidades.setTextContent(String.valueOf(maquina.getUnidades()));
+
+            // <enVenta>: el boolean también se convierte a texto.
+            Element elementoEnVenta = documento.createElement("enVenta");
+            elementoEnVenta.setTextContent(String.valueOf(maquina.isEnVenta()));
+
+            // Se cuelgan los tres hijos de <maquina>, y <maquina> de la raíz.
+            elementoMaquina.appendChild(elementoNombre);
+            elementoMaquina.appendChild(elementoUnidades);
+            elementoMaquina.appendChild(elementoEnVenta);
+            raiz.appendChild(elementoMaquina);
+        }
+
+        // Crea la carpeta de destino si falta (el enunciado lo pide).
+        if (archivo.getParent() != null) {
+            Files.createDirectories(archivo.getParent());
+        }
+ 
+        // Transformer escribe el árbol en el archivo. Modo seguro, UTF-8 (tildes) y sangría (legible).
+        TransformerFactory fabrica = TransformerFactory.newInstance();
+        fabrica.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
+        Transformer transformador = fabrica.newTransformer();
+        transformador.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+        transformador.setOutputProperty(OutputKeys.INDENT, "yes");
+
+        // DOMSource es el árbol de origen; StreamResult es el archivo de destino.
+        // No se toca el .dat: solo se escribe el XML.
+        transformador.transform(new DOMSource(documento), new StreamResult(archivo.toFile()));
+
+    } catch (ParserConfigurationException | TransformerException e) {
+        // Los errores de configuración y de escritura del XML pasan a ser IOException.
+        throw new IOException("No se pudo exportar el XML: " + e.getMessage());
+    }
+    }
+
+    // RESUELTOS: no modificar.
+    public static boolean esValida(MaquinaArcade maquina) {
+        return maquina != null && maquina.getId() > 0 && maquina.getUnidades() >= 0
+                && maquina.getNombre() != null && !maquina.getNombre().isBlank();
+    }
+
+    public static MaquinaArcade buscar(List<MaquinaArcade> lista, int id) {
+        MaquinaArcade encontrada = null;
+        for (MaquinaArcade maquina : lista) {
+            if (maquina.getId() == id) {
+                encontrada = maquina;
+            }
+        }
+        return encontrada;
+    }
+
+    public static void guardar(Path archivo, List<MaquinaArcade> lista) throws IOException {
+        if (archivo.getParent() != null) {
+            Files.createDirectories(archivo.getParent());
+        }
+        try (ObjectOutputStream salida = new ObjectOutputStream(Files.newOutputStream(archivo))) {
+            salida.writeObject(lista);
+        }
+    }
+```
