@@ -108,7 +108,20 @@ pregunta inicial:
 
 el proceso de la motivacion en un programador. 
 elemtno ejemplo de progrmador
-necesidad quiere sentirse valorado por el trabajo que realiza
-tension lleva varios sprints trabajando, pero no recibe comentarios ni reconocimiento
-conducta prepara una demostracion y presenta las mejora que ha realizado
-resultado
+*necesidad:* quiere sentirse valorado por el trabajo que realiza
+*tension:* lleva varios sprints trabajando, pero no recibe comentarios ni reconocimiento
+*conducta:* prepara una demostracion y presenta las mejora que ha realizado
+*resultado:* si recibe reconocimiento,puede sentirse satisfecho; si nadie valora su esfuerzo, puede frustrarse.
+
+piramide de maslow: ( buscar y buscar ejemplos)
+
+tiene 5 niveles para trasladar en un entorno de trabjao, ejemplo tecnologia
+aplicada tambien en cualquier empresa. 
+ 5-fisiologicas:realizacion como persona.
+ necesidades basicas. En el trabajo: descansos, jornada razonables, argonomica, silla adecuada y temperatura apropiada
+ 4-seguridad:Necesidad de estabilidad y proteccion.Por ejemplo: contrato estable cobro puntual y prevencion de riesgos laborales.
+ 3-sociales: Necesidad de pertenecer a un grupo : Por ejemplo: colaborar con otros programadores, compartir conocimientos y sentirse parte del grupo
+ 2-Estima: Necesidad de reconocimiento valore una solucion tecnica, una aportacion o el trabajo realizado en una revision de codigo. 
+ 1-Autorrealizacion: Necesidad de crecer y desarrollar capacidades. Por ejemplo: crear un proyecto propio, aprender otro lenguaje o asumir el liderazgo de un equipo.
+ 
+  
