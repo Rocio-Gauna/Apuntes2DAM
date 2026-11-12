@@ -73,3 +73,24 @@ en todos los procesos se usan ambos
 
 cambio de contexto
 
+operaciones basicas con procesos
+create: Creacion de nuevos procesos
+wait: El oadre espera hasta el hijo
+destroy: 
+el padre e hijo no comparte la memoria
+si un padre muere el hijo en un arbol(mueren todos)
+
+create:
+
+para lanzar un proceso hacemos un:
+ ProcessBuilder pb = new processbuilder(..parametros..)
+
+con un objeto
+process p= pb.start() 
+()entre parentesis ejemplo un ls o un ls -l ( "ls", "-l")
+
+comunicacion de procesos...
+
+redirectErrorStream(bool) junta todo a la salida. stdout y stderr
+
+
