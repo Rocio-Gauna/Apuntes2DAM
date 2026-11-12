@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <EditText
+        android:id="@+id/etProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Producto"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/etStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Stock"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio por unidad"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir producto" />
+
+    <TextView
+        android:id="@+id/tvResumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/lvProductos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

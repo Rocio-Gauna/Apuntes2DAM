@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <EditText
+        android:id="@+id/etTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título de película"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/etAnio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Año"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etDuracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Duración en minutos"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir película" />
+
+    <TextView
+        android:id="@+id/tvResumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resumen"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/lvPeliculas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

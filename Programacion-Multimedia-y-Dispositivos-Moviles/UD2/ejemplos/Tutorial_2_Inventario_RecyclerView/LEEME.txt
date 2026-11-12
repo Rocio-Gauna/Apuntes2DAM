@@ -1,0 +1,10 @@
+TUTORIAL RESUELTO PMDM - UD2
+Tutorial 2 Inventario RecyclerView
+
+Crea un proyecto Empty Views Activity en Android Studio, con Kotlin.
+Conserva el package correspondiente al proyecto y ajusta la primera
+línea package de los .kt a ese paquete. Copia los archivos con su nombre
+y ubicación dentro de app/src/main, según corresponda.
+Los archivos se entregan para integrarse en un proyecto creado por
+Android Studio; no constituyen por sí solos un proyecto Gradle completo.
+Sigue el PDF paso a paso antes de copiar el código a ciegas.

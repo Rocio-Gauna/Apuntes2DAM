@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <EditText
+        android:id="@+id/etCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cliente"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/etUnidades"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unidades"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio/unidad"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir" />
+
+    <TextView
+        android:id="@+id/tvResumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total pedidos"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPedidos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

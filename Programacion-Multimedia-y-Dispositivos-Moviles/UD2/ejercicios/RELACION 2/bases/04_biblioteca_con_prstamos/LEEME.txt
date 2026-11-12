@@ -1,0 +1,11 @@
+PMDM · UNIDAD 2 · RELACIÓN 2 · EJERCICIO 04
+Biblioteca con préstamos
+
+BASE INCOMPLETA DEL EJERCICIO (no solución)
+Crea un proyecto Empty Views Activity / Kotlin en Android Studio.
+Copia el diseño a app/src/main/res/layout/activity_main.xml.
+Copia o adapta MainActivity.kt a tu package real (la primera línea
+package com.example.pmdm es un ejemplo que debes sustituir).
+Si la app requiere RecyclerView, añade primero la dependencia.
+Si el enunciado pide otra Activity o un Adapter, créalos tú.
+El alumno tiene que implementar toda la lógica y las validaciones.

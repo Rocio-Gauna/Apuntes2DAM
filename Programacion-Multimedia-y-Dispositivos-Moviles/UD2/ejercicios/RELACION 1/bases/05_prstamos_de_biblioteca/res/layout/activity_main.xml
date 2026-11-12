@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <EditText
+        android:id="@+id/etLibro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Libro"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/etSocio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Socio"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/etDias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Días prestado"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar" />
+
+    <TextView
+        android:id="@+id/tvResumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resumen"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/lvPrestamos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

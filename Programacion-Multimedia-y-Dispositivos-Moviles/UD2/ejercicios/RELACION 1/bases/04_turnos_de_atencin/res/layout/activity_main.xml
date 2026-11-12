@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/etHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hora (0-23)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etMinuto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Minuto (0-59)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reservar turno" />
+
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/lvTurnos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

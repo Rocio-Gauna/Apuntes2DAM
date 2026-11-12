@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <EditText
+        android:id="@+id/etEquipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Equipo"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/etVictorias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Victorias"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etEmpates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Empates"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir equipo" />
+
+    <Button
+        android:id="@+id/btnOrdenar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ordenar puntos" />
+
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEquipos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

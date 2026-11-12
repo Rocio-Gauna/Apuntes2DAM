@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <EditText
+        android:id="@+id/etTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/etGenero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Género"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/etMinutos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Minutos"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir" />
+
+    <Button
+        android:id="@+id/btnFiltrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver cortos" />
+
+    <TextView
+        android:id="@+id/tvResumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resumen"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPeliculas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
