@@ -4,9 +4,9 @@ from odoo import fields, models
 
 class PokeStoreCollection(models.Model):
     #Nombre tecnivo unico del modelo odoo creara la tabla de pockestore_collection
-    _name= "pokestore-collection"
+    _name= "pokestore.collection"
     #Descripcion legible del modelo la vera el usuario y los logs
-    _decription = "Coleccion de figuras"
+    _description = "Coleccion de figuras"
     #Orden por defecto al listar alfabetico por nombre
     _order = "name"
     
