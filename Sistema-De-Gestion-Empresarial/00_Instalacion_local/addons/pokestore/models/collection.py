@@ -18,3 +18,8 @@ class PokeStoreCollection(models.Model):
     release_date = fields.Date(string="Fecha de lanzamiento")
     #Activo: si lo desmarcas, la coleccion se archiva y deja de verse en las listas
     active = fields.Boolean(string="Activo",default=True)
+    figure_ids = fields.One2many(
+        "pokestore.figure",
+        "collection_id",
+        string="figuras",
+    )
