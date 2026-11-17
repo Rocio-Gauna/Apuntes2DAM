@@ -19,38 +19,34 @@ conoces como se compone el mercado laboral?
 
 sabes como acceder al empleo publico?
 
-
  1 - ¿A qué nos referimos con "Mercado laboral"?
 mercado laboral:
 
 esta integrado por el conjunto de oferta de demanda y empleo.
  **La coposicion del mercado laboral**  
  En españa, la informacion sobre la situacion del mercado laboral la proporciona la Encuensta de Poblacion Activa (EPA) de forma trimestral.
-
-
 La EPA considera como persona activa o poblacion activa a personas a mayores de 16 años y toma como referencia para sus encuesta la semana anterior a aquella que esta se realiza. Con los datos que obtiene, divide a las personas que integran el mercado laboral en **activos e inactivos**
 
  - Activos: personas que durante la semana de referencia han trabajado en la producción de bienes y servicio o están diponbibles y en condiciones de incorporarse a dicha producción. Pueden estar por lo tanto ocupados o parados.
-
 - Inactivos personas que no estan en las categorias anteriores, como estudiantes, personas jubiladas, quienes se ocupan de las tareas domesticas en su propio domicicio etc.
 
 ![alt text](image.png)
 
 1.1 ¿ Que opciones profesionales existen?
 
-A. Autoempleo 
-la incorporacion al mundo laboral se puede hacer por medio del desarrollo de una idea de negocio. El autoempleo consiste en trabajar por cuenta propia a través de la creación de una empresa, adoptando cualquiera de las formas juridicas posibles. 
+A. Autoempleo
+la incorporacion al mundo laboral se puede hacer por medio del desarrollo de una idea de negocio. El autoempleo consiste en trabajar por cuenta propia a través de la creación de una empresa, adoptando cualquiera de las formas juridicas posibles.
 
 verntajas: independencia y autonomia
 satisfaccion personal
 Reconocimiento social
 Posibilidad de mayores ingresos
-Libertad para organizar el tiempo. 
+Libertad para organizar el tiempo.
 
 inconvenientes: Dedicacion maxima sin horarios fijos.
 el inicio requiere un gran esfuerzo
 incertidumbre y asuncion de riesgos economicos
-su estabilidad depende del mercado, la economia, la competencia, etc. 
+su estabilidad depende del mercado, la economia, la competencia, etc.
 
 
 1.1 ¿Qué opciones profesiones existen?
@@ -59,19 +55,19 @@ Empleo Privado.
 
 ![alt text](image-1.png)
 
-El trabajo por cuenta ajena consiste en trabajar de forma voluntaria y personal para una empresa u organizacion a cambio de un salario. Si elegimos esta opcion, lo más recomendable es acudir primero a una oficina de empleo e inscribirse como demandante de empleo. De esta forma tendremos acceso a ofertas de trabajo, orientacion laboral y cursos de formacion para desempleados que nos permitiran completar nuestra formacion para desempleados que nos permitan completar nuestra formacion. 
-No obstante, tambien existen otras opciones: internet; autocandidatura; relaciones personales; empresas de trabajo temporal; ferias de empleo; bolsas de trabajo; agencias de colocacion; buscar empleo de las fronteras de nuestros pais. 
+El trabajo por cuenta ajena consiste en trabajar de forma voluntaria y personal para una empresa u organizacion a cambio de un salario. Si elegimos esta opcion, lo más recomendable es acudir primero a una oficina de empleo e inscribirse como demandante de empleo. De esta forma tendremos acceso a ofertas de trabajo, orientacion laboral y cursos de formacion para desempleados que nos permitiran completar nuestra formacion para desempleados que nos permitan completar nuestra formacion.
+No obstante, tambien existen otras opciones: internet; autocandidatura; relaciones personales; empresas de trabajo temporal; ferias de empleo; bolsas de trabajo; agencias de colocacion; buscar empleo de las fronteras de nuestros pais.
 
 Ventajas:
 Mayor oferta de empleo
 incentivos a la produccion
 facilidad para promocionar
 horarios flexibles
-no se pone en riesgos el capital 
+no se pone en riesgos el capital
 
 Inconvenientes:
 Temporalidad en algunos sectores.
-Falta de estabilidad en el empleo 
+Falta de estabilidad en el empleo
 Riesgo de discriminacion por razon de sexo, edad, religion, etc. o abusos empresariales.
 Precariedad en el empleo
 Ejecutar ordenes recibidas
@@ -84,17 +80,17 @@ Ejecutar ordenes recibidas
 
 Empleo publico
 una oposicion es un examen...*
-concurso oposicion...* Burcar exactamente 
+concurso oposicion...* Burcar exactamente
 ![alt text](image-3.png)
 
 Que opciones profesiones existen?
 
-Para acceder a un puesto en la administracion publica es necesario superar un proceso de seleccion que se realiza mediante oposicoin, concurso o consurso-oposicion. 
+Para acceder a un puesto en la administracion publica es necesario superar un proceso de seleccion que se realiza mediante oposicoin, concurso o consurso-oposicion.
 
 Si el acceso es el consurso, unicamente se califica por puntos de los meritos de los aspirantes. S i se exige una oposicion, tendras que realizar una mas pruebas o examenes para ganar una de las plazas disponibles. Finalmente, si la modalidad es el concurso oposicion, consistira en realizar ambos sistemas anteriores.
 
-Los empleos en la administracion se ofertan a traves de una convocatoria publica. 
-Pueden existir la siguiente modalidades: funcionariado de carrera; funcionariado interino; personal laboral. 
+Los empleos en la administracion se ofertan a traves de una convocatoria publica.
+Pueden existir la siguiente modalidades: funcionariado de carrera; funcionariado interino; personal laboral.
 
 Ventajas: trabajo estable, Posibilidad de promocion y formacion, remuneracion segura, horario fijo
 
@@ -110,12 +106,11 @@ boe (boletin oficial del estado) y boa(boletin oficial de andalucia )
 
 ![alt text](image-5.png)
 
-A. Red EURES 
+A. Red EURES
 European Employment Service (EURES) es una red de cooperación para el empleo y para la libre circulación de personas trabajadoras en la Union Europea. Está dirigida tanto a personas interesadas en trasladarse a otro país de Europa para estudiar como a empresas que deseen contratar personal de otro países.
 
 B. Europass
-Es un conjunto gratuito de herra-mientas online que permite ges-tionar las competencias y planificar el aprendizaje y la carrera pro-fesional en Europa. 
-
+Es un conjunto gratuito de herra-mientas online que permite ges-tionar las competencias y planificar el aprendizaje y la carrera pro-fesional en Europa.
 ¿trabajar en Europa?
 ![alt text](image-6.png)
 Principales opciones de Europass:
@@ -126,9 +121,8 @@ Edito de cartas de presentacion :
 Suplemento al titulo o certificado profesional
 Documento de movilidad Europass:
 
-
-Ploteus 
-Es un portal sobre oportunidades de formacion en todo el espacio europeo. Es una herramienta util. 
+Ploteus
+Es un portal sobre oportunidades de formacion en todo el espacio europeo. Es una herramienta util.
 ![alt text](image-7.png)
 
 Mi empleabilidad
@@ -143,7 +137,7 @@ Algunas de las Pautas que se recomienda seguir son:
 3.Revisar o relizar un curriculum vitae y una carta de presentacion.
 4.Informarse sobre las empresas.
 5.Preparar la entrevista de trabajo.
-6.Revisión de la entrevista. 
+6.Revisión de la entrevista.
 ![alt text](image-8.png)
 Ala hora de buscar trabajo, la organizacion es fundamental. Es aconsejable
 
@@ -152,6 +146,7 @@ La mayor parte de la oferta laborales se concentran en portales de empleo.
 Un portal de empleo es un espacio web que integran la oferta y la demanda de trabajo existe en el mercado.
 
 Algunos portales de empleo privado son:
+
 - infojobs.net
 - infoempleo.com
 - monster.es
@@ -161,7 +156,7 @@ Algunos portales de empleo publico son:
 - opositor.com
 
 Networking: crear una red de contactos con personas que pueden ayudarte en tu busqueda de empleo.
-Estas conexion podras encontrarlas en tu entorno mas cercano(amistades, compañeras.familiares.etc.) o mediante las redes sociales o las redes profesionels. 
+Estas conexion podras encontrarlas en tu entorno mas cercano(amistades, compañeras.familiares.etc.) o mediante las redes sociales o las redes profesionels.
 ![alt text](image-9.png)
 
 A que nos referimos con marcado laboral?
@@ -170,14 +165,14 @@ A que nos referimos con marcado laboral?
 
 perfil europass: Ayuda a describir tus capacidades, encontrar puestos de trabajo y oportunidades de aprendizaje que te pueden interesar, gestionar tus candidaturas y elaborar curriculos y cartas de presentacion
 
-CV Europass y editor de curriculum vitae: El Cv Europass, presenta las capacidades y calificaciones personales de modo que puede ser comprendida en todos los paises de la union europea. El editor de curriculum vitae sirve para crear uno u actualizarlo. Facilita difirentes plantillas y conservar el documetno confeccionado en un dispositivo. 
+CV Europass y editor de curriculum vitae: El Cv Europass, presenta las capacidades y calificaciones personales de modo que puede ser comprendida en todos los paises de la union europea. El editor de curriculum vitae sirve para crear uno u actualizarlo. Facilita difirentes plantillas y conservar el documetno confeccionado en un dispositivo.
 
 SUPLEMENTO AL TITULO O CERTIFICADO PROFESIONAL
 dOCUMENTO MOVILIDAD.
 
-Para buscar empleo debemos partir del convencimiento de que nuestras formacion es la decuada y tener confianza en nuestras capacidades. 
+Para buscar empleo debemos partir del convencimiento de que nuestras formacion es la decuada y tener confianza en nuestras capacidades.
 
-importante una hoja de ruta. en que marquemos adecuadamente nuestras posibilidades teniendo en cuenta la demanda del mercado 
+importante una hoja de ruta. en que marquemos adecuadamente nuestras posibilidades teniendo en cuenta la demanda del mercado
 recomendaciones:
 
 Planifificar la busqueda de empleo sobre un calendario y un horario
@@ -187,7 +182,7 @@ informarse sobre empresas
 preparar la entrevista de trabajo
 Revision de la entrevista.
 
-la mayor parte de las ofertas laborales se concentran en portales de empleo. 
+la mayor parte de las ofertas laborales se concentran en portales de empleo.
 
 un portal de empleo es un espacio web que integran la oferta y la demanda de trabajo existente ene l mercado
 
@@ -203,14 +198,12 @@ opositor.com
 
 perfil profesional, nuestras caracteristicas tiene que estara lineadas con la demanda de empresas para poder cubrir los puestos de trabajos ofertados
 
-Un perfil Profesional es una descripcion de las caracteristicas tecnicas, personales y sociales, asi como de la expèriencia de una persona, para poder afrontar las tareas y responsabilidadesd e un puesto de trabajo
-
-
-un profesiograma 
+Un perfil Profesional es una descripcion de las caracteristicas tecnicas, personales y sociales, asi como de la expèriencia de una persona, para poder afrontar las tareas y responsabilidadesd e un puesto de trabajo.
+un profesiograma
 es una herramienta que realizan los despartamentos de recursos humanos de las empresas para facilitar el proceso de seleccion de aspirantes.
-su objetivo es si la persona candidata se ajusta al puesto concreto. 
-la reputacion en linea o digital es el prestigio de una persona o una compañia en internet. 
-La publicaciones y las interacciones con otras personas afectana la reputacion. 
+su objetivo es si la persona candidata se ajusta al puesto concreto.
+la reputacion en linea o digital es el prestigio de una persona o una compañia en internet.
+La publicaciones y las interacciones con otras personas afectana la reputacion.
 
 Eleccion profesion
 elemento que condicionan nuestra eleccion profesional son situacion perfonal; formacion; experiencia profesional previa en el mismo sector o en otros; aficciones; vicnulacion a asociaciones;
@@ -221,23 +214,23 @@ para la totams de decisiones es muy util realizar un analisis DAFO ( debilidades
 debilidades:
 dificultad para explicar conceptos tecnicos
 
-fortaleza conocimientos y capacidad de aprendizaje 
+fortaleza conocimientos y capacidad de aprendizaje
 amenazas demandas de cambios en lenguajes de lenguajes de programacion
-oportunidades: posibilidad de trabajar en remoto. 
+oportunidades: posibilidad de trabajar en remoto.
 
-CV. 
+CV.
 herramientas, es documento que recoge de forma ordenada los datos personales, la formacion academica, y experiencia profesional de la persona candidata a un puesto detrabajo
 
 Se debe poner especial atencion en la preparacion del curriculum. Sobre todo, debe ser claro, atractivo y ordenado.
 
-debera utilizarse papel en blanco con dos paginas como maximo. Es preferible incluir una foto. 
+debera utilizarse papel en blanco con dos paginas como maximo. Es preferible incluir una foto.
 
 - Datos Personales: Nombre y apellido, lugar, fecha de nacimiento, direccion , telefono, correo electronico.
 
 - Idiomas: Nivel alcanzado con forme al marco comun europeo de referncias para las lenguas. No se debe incluir la lengua materna.
-- Otros datos de interes.Solo se debe incluir datos relevantes para el puesto de trabajo. 
+- Otros datos de interes.Solo se debe incluir datos relevantes para el puesto de trabajo.
 
-- Redacciones: Se utilizara un lenguaje adecuado y fin faltas de ortografia con la informacion imprensindible par el puesto. 
+- Redacciones: Se utilizara un lenguaje adecuado y fin faltas de ortografia con la informacion imprensindible par el puesto.
 
 - Formacion academica: Titulos oficiales, mas importantes y centros donde se han obtenidos con las fechas obtenidas con fecha de inicio y finalizacion admiten las calificaciones en el caso de ser excelentes
 
@@ -246,16 +239,12 @@ debera utilizarse papel en blanco con dos paginas como maximo. Es preferible inc
 - Experiencia profesional
 Puestos de trabajo y empresas donde se trabajo y empresas donde se trabajo con las fechas o indicando la duracion. las practicas deben incluirse tambien. 
 
-
 **hay 3 formatos clasicos**
-
-CRONOLOGICO INVERSO: 
+CRONOLOGICO INVERSO:
 
 FUNCIONAL:
 
-
 MIXTO:
-
 
 Carta de presentacion:
 
@@ -265,34 +254,30 @@ Tiene como finalidad captar la atencion del receptor al destacar los aspectos ma
 el documento es como nuestra tarjeta de visita y por lo tanto, debera estar impecable redactado.
 
 Siempre va dirigida a una empresa concreta, busca un perfil especifico. Por ellos nunca se debe hacer una carta de presentacion estandar para todas las empresas ni para todas las ofertas de trabajo 
-Ademas, disponer de una buena identidad digital, definir de forma acertada de la marca personal, y desarrollar las competencia digitales que las empresas demandan aumentara la empleabilidad. 
-
+Ademas, disponer de una buena identidad digital, definir de forma acertada de la marca personal, y desarrollar las competencia digitales que las empresas demandan aumentara la empleabilidad.
 
 Como deciden las empresas a quien contratan
 cuadno la empresa necesita contratar a alguien para un puesto de trabajao inica un proceso de seleccion de personalp
-para elegir a la persona ideal se utiliza difirentes instrumentos: pruebas, entrevistas, referencias, ect. El proceso de seleccion consta de las siguientes 
+para elegir a la persona ideal se utiliza difirentes instrumentos: pruebas, entrevistas, referencias, ect. El proceso de seleccion consta de las siguientes
+
 fases:
 analisis del puesto;
 reclumento y preseleccion;
 reclutamiento
 reclutamiento externo; seleccion
 
-la entrevistaq de trabajo 
+la entrevistaq de trabajo
 normalmente suele ser la desiciva de un proceso de seleccin, es decir, es el momento en el que la persona entrevistadora toma una decision respecto a la contratacion de la persona candidata.
 en la actualidad tambien se realizan entrevista de trabajo en grupo
 
+# Reto Profesional
 
- # Reto Profesional
-
- 
-
-
-elaborar una hoja de ruta. 
+elaborar una hoja de ruta.
 elige un puesto de trabajo relacionado con tus estudios con los metodos de busqueda de empleo de la unidad
 Elabora una ficha de descripcion del puesto; puedes ayudarte de ofertas similares en la red.
-describe el perfil profesional mas adecuado para el puesto con un programa, 
+describe el perfil profesional mas adecuado para el puesto con un programa,
 
-planificacion proyecto personal y autoconoimiento 
+planificacion proyecto personal y autoconoimiento
 plan de acccion para buscar empleo
 cv carta de presentacion
 pruebas psicotecnicas y entrevistas
@@ -307,28 +292,26 @@ Autoempleo
 actividad profesional.
 
 el empresariado
-persona capz de identificar una necesidad, reunir los recursos necesarios. 
+persona capz de identificar una necesidad, reunir los recursos necesarios.
 
-La empresa y los valores. 
- la resposabilidad social corporativa es el conjunto de obligaciones. 
- y compromisos que la empresas adquieren con los grupos. 
+La empresa y los valores.
+ la resposabilidad social corporativa es el conjunto de obligaciones.
+ y compromisos que la empresas adquieren con los grupos.
 
  Estudio de mercado:
 
  como aplicar marketing en un mercado. ?
- averigua la respuesta de los compradores potenciales, ante un producto o sevicio. 
+ averigua la respuesta de los compradores potenciales, ante un producto o sevicio.
  criterios de segmentacion
- geograficos, Demograficos, personales, familiares, Psicologicos. conductas por uso. 
+ geograficos, Demograficos, personales, familiares, Psicologicos. conductas por uso.
  Estrategia de segmentacion
  Diferencia. indiferencia concetrada
- 
 
-los agentes de mercado 
+los agentes de mercado
 
-fabricantes de bienes 
+fabricantes de bienes
 
-oceano rojo y oceano azul. 
-
+oceano rojo y oceano azul.
 
 Esqumas de las cuatros acciones: nueva curva de valor
 reducir, eliminar, crear, incrementar
@@ -336,17 +319,51 @@ reducir, eliminar, crear, incrementar
 EL MARKETING 
 Actividad que satisface a los clientes para lograr los objetivos de la empresa: beneficios crecimiento y fines sociales.
 
-marketing estrategico Estudio previo de mercado, pbjetivos y diseño de la estrategia: el plan de marketing 
+marketing estrategico Estudio previo de mercado, pbjetivos y diseño de la estrategia: el plan de marketing.
 
 marketing operativo
-Acciones concreta sobre producto, precio, promocion distribucion 
+Acciones concreta sobre producto, precio, promocion distribucion
 
 caso spotify
-
-
-El posicionamiento del producto 
+El posicionamiento del producto
 como queremos que le consumidor perciba el producto frente a la competencia
 
-en calidad diferencia en precio. 
+en calidad diferencia en precio.
 
+marketing mix: las 4 P.
 
+PRODUCTOS: ¿que vender?
+Bien o servicio que cubre una necesidad
+
+precio ¿cuanto cobrar?
+valor de compra y de comunicacion; cominica estatus y situa frente a la competencia.
+promocion ¿como vender?
+comunica la existencia y caracteristica
+distribucion ¿Donde vender?.
+
+el marketing digital de las 7 P
+El producto: Lo que ofreces al mercado bien o servicios adaptado a las necesidades de tu publico.
+precio: Plaza canal de distibucion y puntos de ventas tiendas ecommerce distribuidores.
+Promocion Tacticas para dar a conocer la oferta publicidad, redes sociales, relaciones publicas.
+Personas Factor humano quien atiende y produce, y los clientes y su interaccion con la marca.
+Procesos : Pasos flujo de trabajo, tiempo de espera y metodologias para entregar el servicio
+Presentacion evidencia fisica:
+Elementos tangibles, diseños del local web, embalaje, uniformidad o aroma del lugar.
+
+Producto y su servicio.
+basico -> La necesidad de fondo: movil (comunicacion;agua-sed)
+formal->Atributos tangibles: calidad diseño envase marca caracteristicas tecnicas
+ampliado->Ventajas añadidas: postventas, garantia, financiacion, envio, instalacion.
+Tipos de productos
+segun la relacion con la demanda de otros productos:
+Complementarios usan conjuntamente
+sustitutivos: si se consume mas de uno, se compra menos del otro.
+independientes: el precio de uno no influye en la compra de otro.
+ ciclo de vida de un producto.
+ Introduccion: Dar a conocer el productos
+ Crecimiento: publicidad
+ Madurez: Distinguir de imitadores y fidelizar
+ declivve: abandonar, mantener o relanzar con innovacion.
+
+ Matriz BCG.
+ producto estrella, productos vaca lechera, productointerrogantes.
