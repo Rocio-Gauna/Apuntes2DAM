@@ -23,23 +23,23 @@ public class GestorInscripciones {
         // CREAMOS UNA LISTA. donde iran las inscripciones. por ahora esa lista esta vacia.
         List<Inscripcion> inscripciones = new ArrayList<>();
 
-        // validamos la lista, si no existe devolvemos una vacia y termino aqui
-        //Esto cumple: " si el archivo no existe, devolcer una lista vacia"
+        // VALIDAMOS la lista, si no existe devolvemos una vacia y termino aqui
+        //" si el archivo no existe, devolVer una lista vacia"
         if (Files.notExists(archivo)) {
             return inscripciones;
         }
 
-        //Copio todas las linas del archivo a una lista de texto en UTF-8
+        //RECORREMOS LAS FILAS. Copio todas las linas del archivo a una lista de texto en UTF-8
         //LEEMOS EL CSV en UTF_8
         List<String> lineas = Files.readAllLines(archivo, StandardCharsets.UTF_8);
 
         //Lista de invitados donde apunto cada ID que voy viendo (sin repetidos)
         Set<Integer>idsVistos = new HashSet<>();
 
-        //con un "for"comienzo a contar, Empiezo en 1 y no en 0, para no contar la cabecera. 
+        //RECORREMOS con un "for"comienzo a contar, Empiezo en 1 y no en 0, para no contar la cabecera. 
         for (int posicion = 1; posicion < lineas.size(); posicion++) {
+            
             //Saco de la lista la lina que toca en esta vuelta
-
             String linea = lineas.get(posicion);
 
             //numero de linea tal como se ve en el archivo
@@ -50,7 +50,7 @@ public class GestorInscripciones {
 
             //En este caso la linea tiene 4 campos: id; persona; taller ;plazas
             // sino lanzo la bandera con un mensaje que la lina falla
-            // cumple : "Si la fila es incorrecta, lazamos el IOException"
+            // "Si la fila es incorrecta, lazamos el IOException"
             if (campos.length != 4) {
                 throw new IOException("Linea" + numeroLinea + ":se esperan 4 campos y hay: " + campos.length);
             }
