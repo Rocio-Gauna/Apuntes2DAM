@@ -136,3 +136,40 @@ Esta relacionada con el contenido del trabajo y con el crecimiento profesional: 
 Buenas condiciones no lo son todos
 no significa que el salario no importe. La idea es que unas buenas condiciones economicas, por si solas, no garantizan una satisfaccion laboral duradera.
 " que os parece mas motivador disponer de un ordenador que funcione correctamente o tener autonomia para diseñar una aplicacion y ver resultado de vuestro trabajo?"
+
+Vroom:
+Buenas condicioness no lo son todo.
+Matriz importante No significa que el salario no importe. La idea es que unas buenas condiciones economicas, por si solas, no garantiza una satisfaccion laboral duradera.
+
+Que os parece mas motivador: disponer de un ordenador que funciones correctamente o tener autonomia para diseñar una aplicacion y ver el resultado de vuestro trabajo?
+la erspuestas permite ver que la condiciones adecuadas son necesesarias.
+
+tieene la teoria de la expectativa.
+
+La motivacion se relaciona con la expectativa que tiene una persona sobre el resultado de su esfuerzo. Nos esforzamos mas cuando que podemos alcanzar el objetivo y que el resultado merece la pena.
+
+"Imaginad que una empresa os pide desarrollar una aplicacion compleja en dos dias. Si considerais que es imposible. podeis perder la motivacion por que pensas que por mucho que os esfuerces no vas a conseguirlo"
+
+Esfuerzo -> Expectativa de logro -> resultado que merece la pena.
+
+Locke teoria de la finalidad. 1968
+Destaca la importancia de establecer objetivos claros y definidos. Las metas orientan el esfuerzos y permite saber que se quiere conseguir.
+
+- "No es lo mismo decirle a un programacion "mejora la aplicacion" que permite reduce un 20% los errores, detectados antes de finalizar el mes" el segundo objetivo es mas concreto"
+
+Adams = teoria de la equidad
+La percepcion de justicia influye en la motivacion
+La personas comparan lo que aportan al trabajo con  lo que reciben y tambien lo comparan con la situacion de otras personas. Si perciben una injustaicia puede disminuir su motivacion.
+
+que hace el trabajador cuando percibe injusticia.
+
+objetivos smart...
+MARTE.
+Medible
+Ambiocioso
+Realista
+Temporales
+Especificos.
+
+tecnicas de motivacion de empresas tecnologicas.
+tecnicas profesionales y contrato psicologicos.
