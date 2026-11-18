@@ -376,3 +376,44 @@ Marcas blancas : De cadenas de distribucion, como hacendado.
 Lean Startup: prototipo y PMV.
 el precio y sus factores.
 precio valor monetario de un producto en el mercado
+Precio Gancho:
+estrategia de precio
+precio gancho, penetracion psicologico, Descremado, De prestigio.
+
+Estrategias de precio:
+Descuentos ejemplo:3x2, Precios paquetes, en dos partes, Discriminacion.
+
+La promocion:
+-audiencia meta, mensaje, Medio, retroalimentacion.
+Actividaes de promocion:
+
+- publicidad
+- Mechandising
+- Promocion de ventas
+- Relaciones publicas
+- Fidelizacion
+- Ventas directas
+
+La distribucion:
+canal directo.
+canal indirecto.
+intensiva.
+selectiva.
+Exclusiva
+Nueva formas.
+
+atencion al cliente: 10 claves(1/2)
+1.Se pierden clientes hay menos reclamaciones y mejora la imagen.
+2.cumplir las promesas
+3.respestar el tiempo del cliente
+4.Obsesionpor los detalles
+ser siempre cortes
+5.Mantener un rol profesional
+6.seguridad al cliente
+7.
+
+franquicia:
+franquiciador aporta.
+frnaquiciado aporta.
+ventjas.
+inconvenientes.
