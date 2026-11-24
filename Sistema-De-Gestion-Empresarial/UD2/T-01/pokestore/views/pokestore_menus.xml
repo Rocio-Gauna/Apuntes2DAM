@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <!-- Nivel 1: la aplicación PokeStore. Sin parent = es la raíz. sequence = posición (menor sale antes) -->
     <menuitem id="pokestore_menu_root" name="PokeStore" sequence="30"/>
+    <!-- Nivel 2: categoría Catálogo, que cuelga de PokeStore (parent) -->
     <menuitem
         id="pokestore_menu_catalog"
         name="Catálogo"
         parent="pokestore_menu_root"
         sequence="10"
     />
+    <!-- Nivel 3: opción Figuras, que cuelga de Catálogo y abre la acción pokestore_figure_action -->
     <menuitem
         id="pokestore_menu_figures"
         name="Figuras"

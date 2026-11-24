@@ -1,7 +1,2 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
-access_pokestore_figure_user, pokestore.figure.user, model_pokestore_figure,base.group_user,1,1,1,1
-access_pokestore_figure_manager,pokestore.figure.manager,model_pokestore_figure,pokestore.group_pokestore_manager,1,1,1,1
-access_pokestore_collection_user,pokestore.collection.user,model_pokestore_collection,base.group_user,1,1,1,0
-access_pokestore_collection_manager,pokestore.collection.manager,model_pokestore_collection,pokestore.group_pokestore_manager,1,1,1,1
-access_pokestore_tag_user,pokestore.tag.user,model_pokestore_tag,base.group_user,1,1,1,0
-access_pokestore_tag_manager,pokestore.tag.manager,model_pokestore_tag,pokestore.group_pokestore_manager,1,1,1,1
+access_pokestore_figure_user,pokestore.figure.user,model_pokestore_figure,base.group_user,1,1,1,1

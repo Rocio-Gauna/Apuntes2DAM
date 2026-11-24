@@ -1,10 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Etiqueta raíz: todo el contenido de Odoo va dentro de <odoo> -->
 <odoo>
-    <record id = "pokestore_figure_view_list" model="ir.ui.view">
+    <!-- VISTA DE LISTA: la tabla con una fila por figura -->
+    <!-- id = nombre único; model="ir.ui.view" = "este registro es una vista" -->
+    <record id="pokestore_figure_view_list" model="ir.ui.view">
+        <!-- Nombre interno de la vista, solo para encontrarla -->
         <field name="name">pokestore.figure.list</field>
+        <!-- A qué modelo (tabla) pertenece esta vista -->
         <field name="model">pokestore.figure</field>
+        <!-- arch = la arquitectura: aquí se dibuja la pantalla -->
         <field name="arch" type="xml">
+            <!-- list = lista (en Odoo 18 se llama list; en versiones antiguas, tree) -->
             <list string="Figuras">
+                <!-- Cada <field> es una columna. El name es el nombre del campo en Python -->
                 <field name="name"/>
                 <field name="pokemon"/>
                 <field name="collection"/>
@@ -15,18 +23,23 @@
         </field>
     </record>
 
+    <!-- VISTA DE FORMULARIO: la ficha de una figura, para crearla o editarla -->
     <record id="pokestore_figure_view_form" model="ir.ui.view">
         <field name="name">pokestore.figure.form</field>
         <field name="model">pokestore.figure</field>
         <field name="arch" type="xml">
             <form string="Figura">
+                <!-- sheet = la hoja blanca central del formulario -->
                 <sheet>
+                    <!-- group exterior: reparte el contenido en dos columnas -->
                     <group>
+                        <!-- Columna izquierda -->
                         <group>
                             <field name="name"/>
                             <field name="pokemon"/>
                             <field name="collection"/>
                         </group>
+                        <!-- Columna derecha -->
                         <group>
                             <field name="rarity"/>
                             <field name="price"/>
@@ -38,10 +51,15 @@
             </form>
         </field>
     </record>
-    
+
+    <!-- ACCIÓN: lo que pasa al hacer clic en el menú: "abre esta ventana" -->
+    <!-- ir.actions.act_window = acción que abre una ventana con vistas -->
     <record id="pokestore_figure_action" model="ir.actions.act_window">
+        <!-- Título que sale arriba en la ventana -->
         <field name="name">Figuras</field>
+        <!-- Qué modelo (tabla) se muestra en esa ventana -->
         <field name="res_model">pokestore.figure</field>
+        <!-- Qué vistas usar, en este orden: primero lista, luego formulario -->
         <field name="view_mode">list,form</field>
     </record>
 </odoo>
