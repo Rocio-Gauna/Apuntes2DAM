@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- LISTA de figuras -->
+    <!-- LISTA de figuras: la tabla con una fila por figura -->
     <record id="pokestore_figure_view_list" model="ir.ui.view">
         <field name="name">pokestore.figure.list</field>
         <field name="model">pokestore.figure</field>
@@ -8,7 +8,7 @@
             <list string="Figuras">
                 <field name="name"/>
                 <field name="pokemon"/>
-                <!-- Ahora se muestra collection_id: sale el nombre de la colección elegida -->
+                <!-- collection_id es el Many2one nuevo; el antiguo "collection" ya no existe -->
                 <field name="collection_id"/>
                 <field name="rarity"/>
                 <field name="price"/>
@@ -28,9 +28,9 @@
                         <group>
                             <field name="name"/>
                             <field name="pokemon"/>
-                            <!-- Desplegable para elegir la colección (Many2one) -->
+                            <!-- Desplegable para elegir la colección -->
                             <field name="collection_id"/>
-                            <!-- widget many2many_tags: las etiquetas salen como cajitas de colores -->
+                            <!-- Etiquetas como cajitas -->
                             <field name="tag_ids" widget="many2many_tags"/>
                         </group>
                         <group>
@@ -45,30 +45,23 @@
         </field>
     </record>
 
-    <!-- VISTA DE BÚSQUEDA: la barra de arriba para buscar, filtrar y agrupar -->
+    <!-- VISTA DE BÚSQUEDA: barra de búsqueda, filtro y agrupación -->
     <record id="pokestore_figure_view_search" model="ir.ui.view">
         <field name="name">pokestore.figure.search</field>
         <field name="model">pokestore.figure</field>
         <field name="arch" type="xml">
             <search string="Buscar figuras">
-                <!-- Al escribir en la barra, Odoo ofrece buscar por nombre -->
                 <field name="name"/>
-                <!-- ...y por Pokémon -->
                 <field name="pokemon"/>
-                <!-- Filtro: botón que deja solo las figuras con rareza exclusiva -->
-                <!-- domain = condición: [(campo, operador, valor)] -->
                 <filter name="filter_exclusive" string="Exclusivas" domain="[('rarity', '=', 'exclusive')]"/>
-                <!-- Caja "Agrupar por" -->
                 <group expand="0" string="Agrupar por">
-                    <!-- Agrupa las figuras por su colección: context={'group_by': campo} -->
                     <filter name="group_collection" string="Colección" context="{'group_by': 'collection_id'}"/>
                 </group>
             </search>
         </field>
     </record>
 
-    <!-- ACCIÓN de figuras (igual que antes) -->
-    <!-- No hay que decirle que use la vista de búsqueda: Odoo la coge sola porque es del mismo modelo -->
+    <!-- ACCIÓN: abre la ventana de figuras -->
     <record id="pokestore_figure_action" model="ir.actions.act_window">
         <field name="name">Figuras</field>
         <field name="res_model">pokestore.figure</field>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Lista editable de etiquetas: editable="bottom" deja escribir directamente en la fila nueva -->
+    <record id="pokestore_tag_view_list" model="ir.ui.view">
+        <field name="name">pokestore.tag.list</field>
+        <field name="model">pokestore.tag</field>
+        <field name="arch" type="xml">
+            <list string="Etiquetas" editable="bottom">
+                <!-- Única columna: el nombre -->
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- ACCIÓN: abre la ventana de etiquetas solo con vista lista -->
+    <record id="pokestore_tag_action" model="ir.actions.act_window">
+        <field name="name">Etiquetas</field>
+        <field name="res_model">pokestore.tag</field>
+        <field name="view_mode">list</field>
+    </record>
+</odoo>
