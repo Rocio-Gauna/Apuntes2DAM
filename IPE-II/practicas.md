@@ -417,3 +417,33 @@ franquiciador aporta.
 frnaquiciado aporta.
 ventjas.
 inconvenientes.
+
+## Marketing Digital
+
+Conjunto de estrategias y tecnicas diseñadas para promocionar productos y servicios atraves de internet.
+
+ventajas del marketing digital.
+coste bajo.
+almacen ilimitado.
+medicion en tiempo real.
+segmentacion precisa.
+mayor interaccion
+aproximacion al targer.
+flexibidad.
+rentabilidad.
+
+Landing page: la pagina de aterrizaje
+Lead cliente protencial que ha mostrado interes en un producto o servicio de tu negocio y deja sus datos de contacto para convertise en cliente en futuro.
+
+Call to Action: Invitacion a tus clientes para que interactuen.
+
+embudo de ventas:
+
+concimiento : conoce tu producto.
+Interes
+ decision
+  compra
+  Anchor text. Linea de texto con un hipervinculo hacia la pagina especifica a la que quieres dirigir a tus clientes.
+  Remarketing: buscar.
+
+  Glosario expres marketing digital
