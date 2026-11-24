@@ -1,3 +1,1 @@
-from . import collection
-from . import figure
-from . import tag
+# Importa aquí cada archivo de modelo cuando lo crees.
