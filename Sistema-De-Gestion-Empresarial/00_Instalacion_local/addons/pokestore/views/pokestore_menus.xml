@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <?xml version="1.0" encoding="utf-8"?>
     <odoo>
         <menuitem 
         id="pokestore_menu_root" name="PokeStore" sequence="30"/>
@@ -16,4 +14,3 @@
             action="pokestore_figure_action" 
             sequence="10" />
     </odoo>
-</odoo>

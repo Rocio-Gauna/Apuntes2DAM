@@ -1,0 +1,2 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_pokestore_figure_user,pokestore.figure.user,model_pokestore_figure,base.group_user,1,1,1,1

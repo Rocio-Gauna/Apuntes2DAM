@@ -2,7 +2,7 @@ from odoo import fields, models
 
 
 class PokeStoreFigure(models.Model):
- 
+
    _name = "pokestore.figure"
    _description = "Figura coleccionable"
    _order = "name"
