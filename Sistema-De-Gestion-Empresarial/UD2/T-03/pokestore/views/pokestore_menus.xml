@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Aplicación PokeStore (nivel 1) -->
+    <menuitem id="pokestore_menu_root" name="PokeStore" sequence="30"/>
+    <!-- Categoría Catálogo (nivel 2) -->
+    <menuitem id="pokestore_menu_catalog" name="Catálogo" parent="pokestore_menu_root" sequence="10"/>
+    <!-- Opción Figuras (nivel 3), abre la acción de figuras -->
+    <menuitem id="pokestore_menu_figures" name="Figuras" parent="pokestore_menu_catalog" action="pokestore_figure_action" sequence="10"/>
+    <!-- Opción nueva Colecciones, abre la acción de colecciones -->
+    <menuitem id="pokestore_menu_collections" name="Colecciones" parent="pokestore_menu_catalog" action="pokestore_collection_action" sequence="20"/>
+    <!-- Opción nueva Etiquetas, abre la acción de etiquetas -->
+    <menuitem id="pokestore_menu_tags" name="Etiquetas" parent="pokestore_menu_catalog" action="pokestore_tag_action" sequence="30"/>
+</odoo>
