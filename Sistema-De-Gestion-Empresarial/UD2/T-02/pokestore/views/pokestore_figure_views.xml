@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- LISTA de figuras -->
+    <!-- LISTA de figuras con la columna nueva del valor del stock -->
     <record id="pokestore_figure_view_list" model="ir.ui.view">
         <field name="name">pokestore.figure.list</field>
         <field name="model">pokestore.figure</field>
@@ -8,37 +8,49 @@
             <list string="Figuras">
                 <field name="name"/>
                 <field name="pokemon"/>
-                <!-- Ahora se muestra collection_id: sale el nombre de la colección elegida -->
                 <field name="collection_id"/>
                 <field name="rarity"/>
                 <field name="price"/>
                 <field name="stock"/>
+                <!-- Columna nueva: el valor calculado (precio por stock) -->
+                <field name="stock_value"/>
             </list>
         </field>
     </record>
 
-    <!-- FORMULARIO de una figura -->
+    <!-- FORMULARIO con el botón, el valor calculado y las notas -->
     <record id="pokestore_figure_view_form" model="ir.ui.view">
         <field name="name">pokestore.figure.form</field>
         <field name="model">pokestore.figure</field>
         <field name="arch" type="xml">
             <form string="Figura">
+                <!-- header = la franja de arriba donde van los botones -->
+                <header>
+                    <!-- name = método de Python que se ejecuta al pulsar -->
+                    <!-- type="object" = "llama a un método del modelo" (no abre ventanas) -->
+                    <!-- btn-primary = botón de color destacado -->
+                    <button name="action_deplete_stock" type="object" string="Agotar stock" class="btn-primary"/>
+                </header>
                 <sheet>
                     <group>
                         <group>
                             <field name="name"/>
                             <field name="pokemon"/>
-                            <!-- Desplegable para elegir la colección (Many2one) -->
                             <field name="collection_id"/>
-                            <!-- widget many2many_tags: las etiquetas salen como cajitas de colores -->
                             <field name="tag_ids" widget="many2many_tags"/>
                         </group>
                         <group>
                             <field name="rarity"/>
                             <field name="price"/>
                             <field name="stock"/>
+                            <!-- Valor calculado: se ve pero no se puede escribir (los calculados son de solo lectura) -->
+                            <field name="stock_value"/>
                             <field name="active"/>
                         </group>
+                    </group>
+                    <group>
+                        <!-- Notas internas: aquí se escribe la recomendación automática del onchange -->
+                        <field name="internal_notes"/>
                     </group>
                 </sheet>
             </form>
