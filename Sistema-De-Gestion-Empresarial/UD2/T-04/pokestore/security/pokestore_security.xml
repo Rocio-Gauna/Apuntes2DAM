@@ -42,4 +42,10 @@
 <field name="res_model">pokestore.figure</field>
 <field name="view_mode">list,form</field>
 </record>
+    <!-- Crea un grupo nuevo. model="res.groups" = "este registro es un grupo de usuarios" -->
+    <!-- El id es el nombre interno único; el CSV lo usará para dar permisos -->
+    <record id="group_pokestore_manager" model="res.groups">
+        <!-- Nombre que verás en Ajustes > Usuarios, al marcar grupos -->
+        <field name="name">Responsable PokeStore</field>
+    </record>
 </odoo>
