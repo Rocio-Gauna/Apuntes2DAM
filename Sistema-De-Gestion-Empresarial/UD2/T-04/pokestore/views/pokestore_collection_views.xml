@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- LISTA de colecciones -->
+    <record id="pokestore_collection_view_list" model="ir.ui.view">
+        <field name="name">pokestore.collection.list</field>
+        <field name="model">pokestore.collection</field>
+        <field name="arch" type="xml">
+            <list string="Colecciones">
+                <field name="name"/>
+                <field name="generation"/>
+                <field name="release_date"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- FORMULARIO de una colección, con pestaña de figuras -->
+    <record id="pokestore_collection_view_form" model="ir.ui.view">
+        <field name="name">pokestore.collection.form</field>
+        <field name="model">pokestore.collection</field>
+        <field name="arch" type="xml">
+            <form string="Colección">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="generation"/>
+                        <field name="release_date"/>
+                        <field name="active"/>
+                    </group>
+                    <notebook>
+                        <page string="Figuras">
+                            <field name="figure_ids"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- ACCIÓN: abre la ventana de colecciones -->
+    <record id="pokestore_collection_action" model="ir.actions.act_window">
+        <field name="name">Colecciones</field>
+        <field name="res_model">pokestore.collection</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

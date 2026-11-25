@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Tutorial 04: datos maestros -->
+    <!-- noupdate="1": Odoo los crea al instalar y, al actualizar, NO pisa lo que el usuario haya cambiado -->
+    <data noupdate="1">
+        <!-- Crea un registro del modelo pokestore.collection (una colección) -->
+        <!-- El id es el XML ID: nombre fijo para poder referirnos a este registro desde otros archivos -->
+        <record id="collection_kanto" model="pokestore.collection">
+            <!-- Cada <field> rellena un campo del modelo -->
+            <field name="name">Kanto Clásica</field>
+            <field name="generation">1</field>
+        </record>
+        <!-- Segunda colección -->
+        <record id="collection_johto" model="pokestore.collection">
+            <field name="name">Johto Dorada</field>
+            <field name="generation">2</field>
+        </record>
+        <!-- Tercera colección -->
+        <record id="collection_hoenn" model="pokestore.collection">
+            <field name="name">Hoenn Marina</field>
+            <field name="generation">3</field>
+        </record>
+    </data>
 </odoo>
