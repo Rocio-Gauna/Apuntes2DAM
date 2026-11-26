@@ -2,7 +2,7 @@
 <odoo>
     <!-- noupdate="1": Odoo los crea al instalar y, al actualizar, NO pisa lo que el usuario haya cambiado -->
     <data noupdate="1">
-        <!-- Crea un registro del modelo pokestore.collection (una colección) -->
+        <!-- Crea un registro del modelo pokestore.collection(una colección) -->
         <!-- El id es el XML ID: nombre fijo para poder referirnos a este registro desde otros archivos -->
         <record id="collection_kanto" model="pokestore.collection">
             <!-- Cada <field> rellena un campo del modelo -->

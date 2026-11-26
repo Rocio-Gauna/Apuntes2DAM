@@ -10,8 +10,10 @@
     "depends": ["base"],
     ##Lista de archivos que Odoo tiene que leer, en este orden 
     "data": [
+        "security/pokestore_security.xml",
         # Permisos primero (ahora con tres modelos)
         "security/ir.model.access.csv",
+        "data/pokestore_collection_data.xml",
         # Vistas de colecciones y etiquetas (las figuras las necesitan para el desplegable)
         "views/pokestore_collection_views.xml",
         "views/pokestore_tag_views.xml",
