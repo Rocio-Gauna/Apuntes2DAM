@@ -1,4 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Tutorial 04: datos de demostración -->
+    <record id="figure_demo_pikachu" model="pokestore.figure">
+        <field name="name">Pikachu Sonriente</field>
+        <field name="pokemon">Pikachu</field>
+        <field name="collection_id" ref="collection_kanto"/>
+        <field name="rarity">normal</field>
+        <field name="price">24.90</field>
+        <field name="stock">12</field>
+    </record>
+    <record id="figure_demo_charmander" model="pokestore.figure">
+        <field name="name">Charmander con Llama</field>
+        <field name="pokemon">Charmander</field>
+        <field name="collection_id" ref="collection_kanto"/>
+        <field name="rarity">rare</field>
+        <field name="price">34.50</field>
+        <field name="stock">5</field>
+    </record>
+    <record id="figure_demo_togepi" model="pokestore.figure">
+        <field name="name">Togepi Dorado</field>
+        <field name="pokemon">Togepi</field>
+        <field name="collection_id" ref="collection_johto"/>
+        <field name="rarity">exclusive</field>
+        <field name="price">59.90</field>
+        <field name="stock">2</field>
+    </record>
+    <record id="figure_demo_mudkip" model="pokestore.figure">
+        <field name="name">Mudkip Nadador</field>
+        <field name="pokemon">Mudkip</field>
+        <field name="collection_id" ref="collection_hoenn"/>
+        <field name="rarity">normal</field>
+        <field name="price">19.90</field>
+        <field name="stock">8</field>
+    </record>
 </odoo>
